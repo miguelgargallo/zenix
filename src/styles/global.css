@@ -1,10 +1,9 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+Global fonts blog CSS
+*/
+
 body {
-	font-family: Verdana, sans-serif;
+	font-family: 'Lora', serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
@@ -15,53 +14,101 @@ body {
 	line-height: 1.5;
 	color: #444;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
+h1 {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h6 {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+}
+
 strong,
 b {
 	color: #222;
+	font-family: 'Lora', serif;
 }
+
 a {
 	color: #3273dc;
+	font-family: 'Roboto', sans-serif;
 }
+
 nav a {
 	margin-right: 10px;
+	font-family: 'Roboto', sans-serif;
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
 }
+
 input {
 	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
 }
+
 content {
 	line-height: 1.6;
+	font-family: 'Roboto', sans-serif;
 }
+
 table {
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: #f2f2f2;
+	font-family: 'SF Mono', monospace;
 }
+
 pre {
 	padding: 1rem;
+	font-family: 'SF Mono', monospace;
 }
-pre > code {
+
+pre>code {
 	all: unset;
+	font-family: 'SF Mono', monospace;
 }
+
 blockquote {
 	border: 1px solid #999;
 	color: #222;
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+	font-family: 'Lora', serif;
 }
