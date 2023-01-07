@@ -1,7 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Miguel Gargallo | Tech Review.';
+export const SITE_TITLE = 'Tech Review.';
+export const SITE_SEPARATOR = ' | ';
 export const SITE_DESCRIPTION = 'Welcome to Miguel Gargallo Tech Review!';
 export const SITE_URL = 'https://miguelgargallo.com';
 export const SITE_IMAGE = 'https://miguelgargallo.com/images/og-image.png';

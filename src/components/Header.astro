@@ -1,10 +1,12 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../config";
+import { SITE_TITLE, AUTHOR, SITE_SEPARATOR } from "../config";
 ---
 
 <header>
   <h2>
+    {AUTHOR}
+    {SITE_SEPARATOR}
     {SITE_TITLE}
   </h2>
   <nav>
