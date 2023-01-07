@@ -197,6 +197,12 @@ nav ul li a:hover::after {
 	overflow-x: auto;
 }
 
+
+.horizontal-scroll nav {
+	display: inline-block;
+	text-align: center;
+}
+
 .horizontal-scroll .day-square {
 	display: inline-block;
 	width: 80px;
