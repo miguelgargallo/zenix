@@ -4,7 +4,7 @@ import Ga from "../components/Ga.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
@@ -40,7 +40,17 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
   <body>
     <Ga />
     <Header />
-    <main>
+    <div>
+      <!-- Add JavaScript to redirect to /blog when a day square is clicked -->
+      <script>
+        const daySquares = document.querySelectorAll(".day-square");
+        daySquares.forEach((daySquare) => {
+          daySquare.addEventListener("click", () => {
+            window.location.href = "/blog";
+          });
+        });
+      </script>
+
       <section>
         <ul>
           {
@@ -62,7 +72,8 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           }
         </ul>
       </section>
-    </main>
-    <Footer />
+
+      <Footer />
+    </div>
   </body>
 </html>

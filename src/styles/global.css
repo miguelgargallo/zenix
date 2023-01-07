@@ -1,9 +1,7 @@
-/*
-Global fonts blog CSS
-*/
+/* Global fonts blog CSS */
 
 body {
-	font-family: 'Lora', serif;
+	font-family: "Lora", serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
@@ -17,70 +15,69 @@ body {
 
 h1 {
 	font-size: 25px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
-
 
 h2 {
 	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h3 {
 	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h4 {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h5 {
 	font-size: 14px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h6 {
 	font-size: 12px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 strong,
 b {
 	color: #222;
-	font-family: 'Lora', serif;
+	font-family: "Lora", serif;
 }
 
 a {
 	color: #3273dc;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 nav a {
 	margin-right: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 textarea {
 	width: 100%;
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 input {
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 content {
 	line-height: 1.6;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 table {
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -91,17 +88,17 @@ img {
 code {
 	padding: 2px 5px;
 	background-color: #f2f2f2;
-	font-family: 'SF Mono', monospace;
+	font-family: "SF Mono", monospace;
 }
 
 pre {
 	padding: 1rem;
-	font-family: 'SF Mono', monospace;
+	font-family: "SF Mono", monospace;
 }
 
 pre>code {
 	all: unset;
-	font-family: 'SF Mono', monospace;
+	font-family: "SF Mono", monospace;
 }
 
 blockquote {
@@ -110,5 +107,117 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
-	font-family: 'Lora', serif;
+	font-family: "Lora", serif;
+}
+
+/* Crazy design and animations */
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #3273dc;
+}
+
+/* Add stunning animations when the mouse is used to see the menu */
+nav ul li a {
+	position: relative;
+}
+
+nav ul li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+nav ul li a::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	visibility: hidden;
+	transform: scaleY(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover::after {
+	visibility: visible;
+	transform: scaleY(1);
+}
+
+/* Horizontal scroll for days */
+.horizontal-scroll {
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+.horizontal-scroll .day-square {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 10px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	border: 2px solid #333;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.horizontal-scroll .day-square:hover {
+	background-color: #3273dc;
+	color: #fff;
+}
+
+/* Add active class to today's date */
+.horizontal-scroll .day-square.active {
+	background-color: #3273dc;
+	color: #fff;
 }
