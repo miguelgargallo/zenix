@@ -8,6 +8,5 @@ export const SITE_IMAGE = 'https://miguelgargallo.com/images/og-image.png';
 export const TWITTER_HANDLE = '@miguelgargallo';
 export const TWITTER_SITE = '@miguelgargallo';
 export const TWITTER_CARD_TYPE = 'summary_large_image';
-export const GA_TRACKING_ID = 'UA-XXXXX-X';
 export const DATE_FORMAT = 'MMMM Do, YYYY';
 export const AUTHOR = 'Miguel Gargallo';
