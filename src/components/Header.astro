@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE, AUTHOR, SITE_SEPARATOR } from "../config";
+import Shortcuts from "./Shortcuts.astro";
 
 // Display today's date in the screen, only the number of the day / month
 const today = new Date();
@@ -25,6 +26,7 @@ function subtractDays(date: Date, days: number) {
     {SITE_TITLE}
   </h2>
   <div class="horizontal-scroll">
+    <Shortcuts />
     <nav>
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
