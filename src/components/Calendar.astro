@@ -12,7 +12,7 @@ const subtractDays = (date: Date, days: number) => {
 <div class="horizontal-scroll">
   <!-- Add day squares -->
   {
-    [...Array(8).keys()].map((day) => (
+    [...Array(14).keys()].map((day) => (
       <div class={`day-square ${day === 0 ? "active" : ""}`}>
         <div>
           {getWeekday(subtractDays(today, day))}
