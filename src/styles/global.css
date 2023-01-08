@@ -206,7 +206,6 @@ nav ul li a:hover::after {
 
 .horizontal-scroll .day-square {
 	display: inline-block;
-	shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	background-color: #fff;
 	color: #000;
 	width: 45px;
@@ -241,9 +240,10 @@ nav ul li a:hover::after {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border-bottom: 1px solid #ccc;
 	position: fixed;
-	bottom: 0;
+	padding: 0 20px;
+	top: calc(100% - 50px);
+	/* Position the tab menu at the bottom of the page */
 	left: 0;
 	right: 0;
 	z-index: 999;
@@ -252,8 +252,10 @@ nav ul li a:hover::after {
 }
 
 .content-container {
-	margin-top: 50px;
-	/* Give the content container a top margin equal to the height of the tab menu */
+	margin-bottom: 50px;
+	/* Give the content container a bottom margin equal to the height of the tab menu */
+	overflow-y: auto;
+	/* Enable vertical scrolling for the content container */
 }
 
 @media (min-width: 768px) {
@@ -262,7 +264,7 @@ nav ul li a:hover::after {
 	}
 
 	.content-container {
-		margin-top: 0;
-		/* Remove the top margin on desktop screens */
+		margin-bottom: 0;
+		/* Remove the bottom margin on desktop screens */
 	}
 }
