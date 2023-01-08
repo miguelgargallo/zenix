@@ -11,8 +11,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 <html lang="en">
   <head>
     <Tag />
-    <!-- Link th shortcuts.js
-    <script src="../pages/shortcuts.js"></script>  -->
     <BaseHead
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
@@ -21,17 +19,44 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
   </head>
   <body>
     <Ga />
-    <Header title={SITE_TITLE} />
-    <main>
-      My name is Miguel Gargallo and I am a software developer and entrepreneur.
-      I have a passion for creating innovative products and solving complex
-      problems. I have a background in computer science and have experience
-      working on a variety of projects, including web and mobile apps, data
-      analysis and visualization, and machine learning. In my free time, I enjoy
-      participating in hackathons, learning new technologies, and streaming on
-      Twitch. Feel free to reach out to me on Twitter or GitHub if you have any
-      questions or want to collaborate on a project.
-      <Footer />
+    <Header />
+    <div class="hero-image"></div>
+    <main class="content">
+      <div class="bio">
+        My name is Miguel Gargallo and I am a software developer and
+        entrepreneur. I have a passion for creating innovative products and
+        solving complex problems. I have a background in computer science and
+        have experience working on a variety of projects, including web and
+        mobile apps, data analysis and visualization, and machine learning. In
+        my free time, I enjoy participating in hackathons, learning new
+        technologies, and streaming on Twitch. Feel free to reach out to me on
+        Twitter or GitHub if you have any questions or want to collaborate on a
+        project.
+      </div>
+      <div class="social-links">
+        <a
+          href="https://twitter.com/miguelgargallo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://github.com/miguelgargallo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/miguelgargallo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
     </main>
+    <Footer />
   </body>
 </html>
