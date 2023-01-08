@@ -236,3 +236,33 @@ nav ul li a:hover::after {
 	font-weight: bold;
 	font-size: 12px;
 }
+
+.tab-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	height: 50px;
+	/* Add a fixed height for the tab menu */
+}
+
+.content-container {
+	margin-top: 50px;
+	/* Give the content container a top margin equal to the height of the tab menu */
+}
+
+@media (min-width: 768px) {
+	.tab-menu {
+		display: none;
+	}
+
+	.content-container {
+		margin-top: 0;
+		/* Remove the top margin on desktop screens */
+	}
+}
