@@ -7,7 +7,32 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 ---
 
-<!DOCTYPE html>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .profile {
+    margin: 0 auto;
+  }
+  .bio {
+    max-width: 600px;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .social-links a {
+    margin: 0 10px;
+  }
+  .social-links a i {
+    font-size: 30px;
+  }
+</style>
+
 <html lang="en">
   <head>
     <Tag />
