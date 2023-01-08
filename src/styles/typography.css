@@ -1,0 +1,56 @@
+h1 {
+    font-size: 25px;
+    font-family: "SF Pro", sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "SF Pro", sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: "SF Pro", sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: "SF Pro", sans-serif;
+}
+
+h5 {
+    font-size: 14px;
+    font-family: "SF Pro", sans-serif;
+}
+
+h6 {
+    font-size: 12px;
+    font-family: "SF Pro", sans-serif;
+}
+
+strong,
+b {
+    color: #222;
+    font-family: "SF Pro", sans-serif;
+}
+
+a {
+    color: #3273dc;
+    font-family: "SF Pro", sans-serif;
+}
+
+nav a {
+    margin-right: 10px;
+    font-family: "SF Pro", sans-serif;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+    font-family: "SF Pro", sans-serif;
+}
+
+content {
+    line-height: 1.6;
+    font-family: "SF Pro", sans-serif;
+}

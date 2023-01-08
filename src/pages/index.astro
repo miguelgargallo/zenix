@@ -7,38 +7,10 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 ---
 
-<style>
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-  .profile {
-    margin: 0 auto;
-  }
-  .bio {
-    max-width: 600px;
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .social-links a {
-    margin: 0 10px;
-  }
-  .social-links a i {
-    font-size: 30px;
-  }
-</style>
-
 <html lang="en">
   <head>
     <Tag />
-  </head><div
-    style="text-align: center; margin-top: 50px; margin-bottom: 50px;"
-  >
+  </head><div>
     <BaseHead
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
@@ -49,51 +21,50 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
   <body>
     <Ga />
     <Header />
-    <div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
-      <img
-        src="https://pbs.twimg.com/profile_images/1586447193900204035/fLZqjQLG_400x400.jpg"
-        alt="Miguel Gargallo"
-        class="profile"
-        style="width: 200px; height: 200px; border-radius: 50%;"
-      />
-    </div>
-    <main class="content">
-      <div class="bio" style="text-align: center; margin-bottom: 50px;">
-        My name is Miguel Gargallo and I am a software developer and
-        entrepreneur. I have a passion for creating innovative products and
-        solving complex problems. I have a background in computer science and
-        have experience working on a variety of projects, including web and
-        mobile apps, data analysis and visualization, and machine learning. In
-        my free time, I enjoy participating in hackathons, learning new
-        technologies, and streaming on Twitch. Feel free to reach out to me on
-        Twitter or GitHub if you have any questions or want to collaborate on a
-        project.
-      </div>
-      <div class="social-links">
-        <a
-          href="https://twitter.com/miguelgargallo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://github.com/miguelgargallo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/miguelgargallo/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
 
-      <Footer />
-    </main>
+    <img
+      src="https://pbs.twimg.com/profile_images/1586447193900204035/fLZqjQLG_400x400.jpg"
+      alt="Miguel Gargallo"
+      class="profile"
+    />
   </body>
+  <main class="content">
+    <div class="bio">
+      My name is Miguel Gargallo and I am a software developer and entrepreneur.
+      I have a passion for creating innovative products and solving complex
+      problems. I have a background in computer science and have experience
+      working on a variety of projects, including web and mobile apps, data
+      analysis and visualization, and machine learning. In my free time, I enjoy
+      participating in hackathons, learning new technologies, and streaming on
+      Twitch. Feel free to reach out to me on Twitter or GitHub if you have any
+      questions or want to collaborate on a project.
+    </div>
+    <div class="social-links">
+      <a
+        href="https://twitter.com/miguelgargallo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+        href="https://github.com/miguelgargallo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/miguelgargallo/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+    <Footer />
+  </main>
+
+
 </html>

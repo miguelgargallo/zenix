@@ -1,0 +1,83 @@
+body {
+    font-family: "SF Pro", sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 65ch;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+    font-family: "SF Mono", monospace;
+}
+
+pre {
+    padding: 1rem;
+    font-family: "SF Mono", monospace;
+}
+
+pre>code {
+    all: unset;
+    font-family: "SF Mono", monospace;
+}
+
+blockquote {
+    border: 1px solid #999;
+    color: #222;
+    padding: 2px 0px 2px 20px;
+    margin: 0px;
+    font-style: italic;
+    font-family: "SF Pro", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 16px;
+    font-family: "SF Pro", sans-serif;
+}
+
+.tab-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    padding: 0 20px;
+    top: calc(100% - 50px);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 50px;
+}
+
+.content-container {
+    margin-bottom: 50px;
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .tab-menu {
+        display: none;
+    }
+
+    .content-container {
+        margin-bottom: 0;
+        /* Remove the bottom margin on desktop screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .horizontal-scroll {
+        display: none;
+    }
+}
