@@ -1,27 +1,29 @@
-<!-- Astro Component of keyboard shortcuts to move between pages, "/", /blog and /about -->
 <script>
-  (function () {
-    function handleKeydown(e: { key: string; shiftKey: any }) {
-      if (e.key === "1") {
-        window.location.href = "/";
-      } else if (e.key === "2") {
-        window.location.href = "/blog";
-      } else if (e.key === "3") {
-        window.location.href = "/about";
-      } else if (e.key === "4") {
-        window.location.href = "https://twitter.com/miguelgargallo";
-      } else if (e.key === "5") {
-        window.location.href = "https://github.miguelgargallo.es";
-      } else if (e.key === "6") {
-        window.location.href = "https://twitch.miguelgargallo.es";
-      } else if (e.key === "7") {
-        window.location.href = "https://youtube.miguelgargallo.es";
-      } else if (e.key === "8") {
-        window.location.href = "https://ig.miguelgargallo.es";
-      } else if (e.key === "h") {
-        window.location.href = "/help";
-      }
+  const SHORTCUTS = {
+    q: "/",
+    1: "/",
+    2: "/blog",
+    3: "/about",
+    4: "https://twitter.com/miguelgargallo",
+    5: "https://github.miguelgargallo.es",
+    6: "https://twitch.miguelgargallo.es",
+    7: "https://youtube.miguelgargallo.es",
+    8: "https://ig.miguelgargallo.es",
+  };
+
+  function handleKeydown(event: { key: string }) {
+    if (event.key === "h") {
+      alert(
+        "You tapped for help. Here's a list of keyboard shortcuts: 1: Home, 2: Blog, 3: About, 4: Twitter, 5: GitHub, 6: Twitch, 7: YouTube, 8: Instagram"
+      );
+      return;
     }
-    document.addEventListener("keydown", handleKeydown);
-  })();
+
+    const shortcut = SHORTCUTS[event.key];
+    if (shortcut) {
+      window.location.href = shortcut;
+    }
+  }
+
+  document.addEventListener("keydown", handleKeydown);
 </script>

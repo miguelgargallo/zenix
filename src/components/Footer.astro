@@ -4,13 +4,38 @@ import { AUTHOR } from "../config";
 const today = new Date();
 ---
 
-<footer>
-  &copy; {today.getFullYear()}
-  {AUTHOR}. All rights reserved.
-</footer>
 <style>
   footer {
     padding: 25px;
     text-align: center;
   }
 </style>
+<footer class="footer">
+  <!-- Astro Component of footer -->
+  <div class="footer-left">
+    <p class="footer-links">
+      <a href="https://twitter.com/miguelgargallo">Twitter</a>
+      ·
+      <a href="https://github.miguelgargallo.es">GitHub</a>
+      ·
+      <a href="https://twitch.miguelgargallo.es">Twitch</a>
+      ·
+      <a href="https://youtube.miguelgargallo.es">YouTube</a>
+      ·
+      <a href="https://ig.miguelgargallo.es">Instagram</a>
+    </p>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the developer</span>
+      Miguel Gargallo is a Software Engineer at <a href="https://www.pylar.org/"
+        >Pylar</a
+      > and a content creator on <a
+        href="https://www.youtube.com/channel/UCPcR0xkOJZCjD1M9kXp3q3g"
+        >YouTube</a
+      > and <a href="https://www.twitch.tv/miguelgargallo">Twitch</a>.
+    </p>
+    &copy; {today.getFullYear()}
+    {AUTHOR}. All rights reserved.
+  </div>
+</footer>
