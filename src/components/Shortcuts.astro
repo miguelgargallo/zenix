@@ -2,19 +2,30 @@
   const SHORTCUTS = {
     q: "/",
     1: "/",
+    b: "/blog",
     2: "/blog",
+    a: "/about",
     3: "/about",
-    4: "https://twitter.com/miguelgargallo",
-    5: "https://github.miguelgargallo.es",
-    6: "https://twitch.miguelgargallo.es",
-    7: "https://youtube.miguelgargallo.es",
-    8: "https://ig.miguelgargallo.es",
+    k: "https://ko-fi.com/miguelgargallo",
+    4: "https://ko-fi.com/miguelgargallo",
+    t: "https://twitter.com/miguelgargallo",
+    5: "https://twitter.com/miguelgargallo",
+    g: "https://github.miguelgargallo.es",
+    6: "https://github.miguelgargallo.es",
+    w: "https://twitch.miguelgargallo.es",
+    7: "https://twitch.miguelgargallo.es",
+    y: "https://youtube.miguelgargallo.es",
+    8: "https://youtube.miguelgargallo.es",
+    i: "https://instagram.com/miguelgargallo.es",
+    9: "https://instagram.com/miguelgargallo.es",
+    h: "/help",
+    0: "/help",
   };
 
   function handleKeydown(event: { key: string }) {
     if (event.key === "h") {
       alert(
-        "You tapped for help. Here's a list of keyboard shortcuts: 1: Home, 2: Blog, 3: About, 4: Twitter, 5: GitHub, 6: Twitch, 7: YouTube, 8: Instagram"
+        "You tapped for help \n Here's a list of keyboard shortcuts numebers or words: \n 1 or q: Home \n 2 or b: Blog \n 3 or a: About \n 4 or k: Ko-fi \n 5 or t: Twitter \n 6 or g: GitHub \n 7 or w:Twitch \n 8 or y: YouTube \n 9 or i: Instagram \n 0 or h: Help"
       );
       return;
     }

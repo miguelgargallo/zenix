@@ -6,12 +6,12 @@ updatedDate: "August 08 2022"
 heroImage: "https://user-images.githubusercontent.com/5947268/210157509-f3fcef5e-c590-43e2-8e3d-d766c58e47ab.png"
 ---
 
-# Pencil Works LLC
+# About my online presence
 
-- [Pencil Works LLC](#pencil-works-llc)
+- [About my online presence](#about-my-online-presence)
   - [About Pencil Works LLC](#about-pencil-works-llc)
     - [Services](#services)
-  - [Pencil Works LLC](#pencil-works-llc-1)
+  - [Pencil Works LLC](#pencil-works-llc)
     - [Pencil Apps](#pencil-apps)
     - [Pencil University](#pencil-university)
         - [Road to your start-up](#road-to-your-start-up)

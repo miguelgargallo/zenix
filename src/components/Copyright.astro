@@ -1,0 +1,12 @@
+---
+import { AUTHOR } from "../config";
+import Mobile from "./Mobile.astro";
+const today = new Date();
+---
+
+<div>
+  &copy; {today.getFullYear()}
+  {AUTHOR}. All rights reserved.
+  <Mobile />
+  <div>.</div>
+</div>
