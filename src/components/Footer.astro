@@ -1,6 +1,6 @@
 ---
 import { AUTHOR } from "../config";
-
+import Mobile from "./Mobile.astro";
 const today = new Date();
 ---
 
@@ -38,4 +38,5 @@ const today = new Date();
     &copy; {today.getFullYear()}
     {AUTHOR}. All rights reserved.
   </div>
+  <Mobile />
 </footer>

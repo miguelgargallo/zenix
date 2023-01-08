@@ -194,36 +194,45 @@ nav ul li a:hover::after {
 /* Horizontal scroll for days */
 .horizontal-scroll {
 	white-space: nowrap;
-	overflow-x: auto;
+	overflow-x: scroll;
+	display: box;
+	width: 10%;
 }
 
 
 .horizontal-scroll nav {
-	display: inline-block;
-	text-align: center;
+	display: flex;
 }
 
 .horizontal-scroll .day-square {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	margin: 0 10px;
+	shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	color: #000;
+	width: 45px;
+	height: 45px;
+	margin: 0 5px;
 	text-align: center;
-	font-size: 22px;
-	font-weight: bold;
-	border: 2px solid #333;
-	border-radius: 5px;
+	font-size: 10px;
+	font-weight: regular;
+	font-family: "Roboto", sans-serif;
+	line-height: 45px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 11px;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
 }
 
 .horizontal-scroll .day-square:hover {
-	background-color: #3273dc;
+	background-color: #ff0000;
 	color: #fff;
 }
 
 /* Add active class to today's date */
 .horizontal-scroll .day-square.active {
-	background-color: #3273dc;
-	color: #fff;
+	background-color: #fff;
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 12px;
 }
