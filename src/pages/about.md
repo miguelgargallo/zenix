@@ -3,7 +3,6 @@ layout: "../layouts/BlogPost.astro"
 title: "About Me"
 description: "Lorem ipsum dolor sit amet"
 updatedDate: "August 08 2022"
-heroImage: "https://user-images.githubusercontent.com/5947268/210157509-f3fcef5e-c590-43e2-8e3d-d766c58e47ab.png"
 ---
 
 # About my online presence
