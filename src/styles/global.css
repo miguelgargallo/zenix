@@ -277,7 +277,7 @@ nav ul li a:hover::after {
 	}
 }
 
-/* Hide nav on phones */
+
 @media (max-width: 768px) {
 	.horizontal-scroll {
 		display: none;

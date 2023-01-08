@@ -5,6 +5,14 @@ import Shortcuts from "./Shortcuts.astro";
 import Calendar from "./Calendar.astro";
 ---
 
+<style>
+  @media (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  }
+</style>
+
 <header>
   <div>
     <Shortcuts />
