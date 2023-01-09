@@ -11,7 +11,6 @@ body {
 }
 
 article {
-    /* article center and margin 40px, text like apple guidelines, and beauty present to perfect read display */
     margin: 40px auto;
     max-width: 800px;
     text-align: left;
@@ -24,7 +23,6 @@ article {
 }
 
 text {
-    /* article center and margin 40px, text like apple guidelines, and beauty present to perfect read display */
     margin: 40px auto;
     max-width: 800px;
     text-align: left;
@@ -37,7 +35,6 @@ text {
 }
 
 div ash {
-    /* div ash center and margin 40px */
     margin: 100px;
 
 }
@@ -102,7 +99,6 @@ input {
 
     .content-container {
         margin-bottom: 0;
-        /* Remove the bottom margin on desktop screens */
     }
 
 }

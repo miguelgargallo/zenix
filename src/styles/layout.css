@@ -2,7 +2,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     position: fixed;
@@ -86,7 +86,6 @@ table {
     border-radius: 11px;
 }
 
-/* Hide nav on screens smaller than 600px */
 @media screen and (max-width: 600px) {
     nav {
         display: none;
@@ -108,7 +107,6 @@ table {
     flex-direction: column;
 }
 
-/* bio is a paragraph, make it 16px font size and 1.6 line height */
 .bio {
     font-size: 16px;
     line-height: 1.6;
