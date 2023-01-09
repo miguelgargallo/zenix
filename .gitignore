@@ -20,3 +20,4 @@ pnpm-debug.log*
 src/components/db.js
 src/components/Id.md
 info.md
+src/pages/telegram.md

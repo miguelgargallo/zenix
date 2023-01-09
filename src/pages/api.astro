@@ -24,23 +24,26 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
     <Ga />
     <Header />
     <p>
-      This is a random number: <span id="random"></span>
+      This is an API random generator: <span id="random"></span>
     </p>
     <div>
       <script>
-        // generate a random string of 244 characters, that begins with "miguel=(the random string)"
         var x =
-          "cil=" + // now the 42 characters of the random string
+          "cil=" +
           Math.random().toString(36).substring(2, 15) +
           Math.random().toString(36).substring(2, 15) +
           Math.random().toString(36).substring(2, 16) +
           Math.random().toString(36).substring(2, 12);
-        // show the number in the console
         console.log(x);
-        // show the number in the browser
         document.getElementById("random").innerHTML = x;
       </script>
+      <form action="/api/submit" method="post">
+        <input type="text" name="name" placeholder="name" />
+        <input type="text" name="api" placeholder="api" />
+        <input type="text" name="domain" placeholder="domain" />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
+    <Footer />
   </body>
-  <Footer />
 </html>
