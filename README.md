@@ -1,16 +1,17 @@
-# Astro Starter Kit: Blog
+---
+layout: "../layouts/BlogPost.astro"
+title: "About MyBlog framework"
+description: "About MyBlog framework | Miguel Gargallo"
+updatedDate: "August 10 2022"
+pubDate: "Jan 10 2023"
+author: "Miguel Gargallo"
+---
 
-```
-npm create astro@latest -- --template blog
-```
+# 🖋️ About MyBlog framework
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/blog)
+This project is a framework based on a fork of [astro-starter-kit](https://astro.build), so this is a modified version of the default template.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-
-![blog](https://user-images.githubusercontent.com/4677417/186189140-4ef17aac-c3c9-4918-a8c2-ce86ba1bb394.png)
+## ✨ Features
 
 Features:
 
@@ -23,25 +24,65 @@ Features:
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Based on the file structure you provided, it looks like your project is built using Astro, which is a static site generator. The .mdx files in the pages/blog directory are Markdown files with JSX, and they will be rendered as blog posts on your site. The .astro files are Astro components, which are used to build the structure of your site. The .css files in the styles directory contain styles that are applied to the site. The tsconfig.json file is for configuring TypeScript, a programming language that is a strict superset of JavaScript. The package.json file lists the project dependencies and scripts for building and running the project. The public directory contains assets such as images and icons that are used on the site. The .github and .vscode directories contain files related to using GitHub and Visual Studio Code, respectively. The README.md file contains information about the project, and the LICENSE.md file specifies the terms under which the project is licensed.
 
 ```
-├── public/
-├── src/
-│   ├── components/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
+* Blog 9,249 Files, 1,725 Folders
+├── .github
+│   └── FUNDING.yml
+├── .gitignore
+├── .vscode
+│   ├── extensions.json
+│   └── launch.json
+├── License.md
 ├── README.md
+├── astro.config.mjs
+├── package-lock.json
 ├── package.json
+├── public
+│   ├── favicon.icns
+│   ├── favicon.ico
+│   ├── favicon.png
+│   ├── favicon.svg
+│   ├── icon.icns
+│   ├── icon.ico
+│   ├── input.png
+│   ├── placeholder-about.jpg
+│   ├── placeholder-hero.jpg
+│   └── placeholder-social.jpeg
+├── src
+│   ├── components
+│   │   ├── BaseHead.astro
+│   │   ├── Calendar.astro
+│   │   ├── Copyright.astro
+│   │   ├── Footer.astro
+│   │   ├── Ga.astro
+│   │   ├── Header.astro
+│   │   ├── HeaderLink.astro
+│   │   ├── Mobile.astro
+│   │   ├── Shortcuts.astro
+│   │   └── Tag.astro
+│   ├── config.ts
+│   ├── env.d.ts
+│   ├── layouts
+│   │   └── BlogPost.astro
+│   ├── pages
+│   │   ├── about.md
+│   │   ├── blog.astro
+│   │   ├── blog
+│   │   │   ├── AI and the Advancement of Math, Science, Cryptography, and Planets.mdx
+│   │   │   ├── How to make chatGPT to write Readme perfectly.mdx
+│   │   │   ├── Using AI to Discover New Marine Species.mdx
+│   │   │   └── why-AI.mdx
+│   │   ├── index.astro
+│   │   ├── projects.md
+│   │   └── rss.xml.js
+│   └── styles
+│       ├── general.css
+│       ├── layout.css
+│       └── typography.css
 └── tsconfig.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -56,10 +97,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 📝 License
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This projects runs on a [Pylar AI creative ML License](https://huggingface.co/spaces/superdatas/LICENSE).
