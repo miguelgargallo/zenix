@@ -4,6 +4,7 @@ title: "About My Online Presence"
 description: "About Miguel Gargallo, his online presence and his projects."
 updatedDate: "August 09 2022"
 pubDate: "Jan 06 2023"
+author: "Miguel Gargallo"
 ---
 
 - [About Pencil Works LLC](#about-pencil-works-llc)
