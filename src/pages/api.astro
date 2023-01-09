@@ -32,9 +32,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
   </body>
   <div>
     <form id="form" action="#" method="post">
-      <p>Your Wallet | Don't touch this! |</p>
       <input type="hidden" name="title" value="New issue" />
-      <input type="text" name="wallet" placeholder="hns wallet" />
+      <input type="text" name="wallet" placeholder="Your HNS Wallet" />
       <input
         type="text"
         name="api"
@@ -43,7 +42,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         disabled
         hidden
       />
-      <input type="text" name="domain" placeholder="domain" />
+      <input type="text" name="domain" placeholder="Your TLD" />
       <input type="submit" value="Submit" />
     </form>
 
@@ -60,12 +59,9 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 
       function getRandomTitle(domain) {
         const titles = [
-          `[Domain] Add .${domain} to this f* awesome registry 🔥🔥🔥`,
-          `[Domain] Eth suc* 💧💧💧 add .${domain} to this amazing world of HNS`,
-          `[Domain] H A N D S H A K E and my tld .${domain} 🚀🚀🚀 rocks`,
-          `[Domain] HNS is the future, add .${domain} to this registry`,
-          `[Domain] WHY NOT .${domain} 🤷‍♂️🤷‍♂️🤷‍♂️ on Handshake registry`,
-          `[Domain] Add .${domain} to Handshake, ✨✨✨ it's awesome`,
+          `Add ${domain} to this f* awesome registry 🔥🔥🔥`,
+          `Eth suc* 💧💧💧 add ${domain} to this amazing project`,
+          `H A N D S H A K E and my tld ${domain} 🚀🚀🚀 rocks`,
         ];
         const index = Math.floor(Math.random() * titles.length);
         return titles[index];
