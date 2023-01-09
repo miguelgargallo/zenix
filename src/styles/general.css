@@ -1,15 +1,19 @@
 body {
-    font-family: "SF Pro", sans-serif;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: 20px;
     padding: 20px;
+    font-family: "SF Pro", sans-serif;
     max-width: 65ch;
     text-align: left;
-    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    color: #444;
 }
+
 
 code {
     padding: 2px 5px;
@@ -71,7 +75,6 @@ input {
 
     .content-container {
         margin-bottom: 0;
-        /* Remove the bottom margin on desktop screens */
     }
 
 }
