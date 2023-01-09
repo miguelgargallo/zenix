@@ -55,7 +55,7 @@ nav ul li a:hover::before {
 
 table {
     width: 100%;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
 }
 
 .horizontal-scroll {
@@ -79,7 +79,7 @@ table {
     text-align: center;
     font-size: 10px;
     font-weight: regular;
-    font-family: "Roboto", sans-serif;
+    font-family: monospace;
     line-height: 45px;
     justify-content: center;
     align-items: center;

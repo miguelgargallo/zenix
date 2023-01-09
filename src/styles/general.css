@@ -1,7 +1,7 @@
 body {
     position: absflexolute;
     padding: 10px;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
@@ -15,7 +15,7 @@ article {
     margin: 40px auto;
     max-width: 800px;
     text-align: left;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
@@ -28,7 +28,7 @@ text {
     margin: 40px auto;
     max-width: 800px;
     text-align: left;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
@@ -64,7 +64,7 @@ blockquote {
     padding: 2px 0px 2px 20px;
     margin: 0px;
     font-style: italic;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
 }
 
 img {
@@ -74,7 +74,7 @@ img {
 
 input {
     font-size: 16px;
-    font-family: "SF Pro", sans-serif;
+    font-family: monospace;
 }
 
 .tab-menu {
