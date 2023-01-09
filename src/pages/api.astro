@@ -19,29 +19,34 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
           target="_blank"
           rel="noopener noreferrer"
         >
-          Reload everytime you submit a domain v3.0.0, this is in Beta, and is
-          not defined yet</a
+          v3.0.1 API, we added a button, to generate another api!</a
         >
       </pill>
     </ash>
-
-    <body>
-      <Ga />
-      <div>
-        <ash>
-          <ApiHeader />
-        </ash>
-      </div>
-      <BaseHead
-        title={SITE_TITLE}
-        description={SITE_DESCRIPTION}
-        author={AUTHOR}
-      />
-    </body>
-    <div>
-      <h3>Welcome to the magic world of Handshake</h3>
-    </div>
   </div>
+
+  <body>
+    <Ga />
+    <div>
+      <ash>
+        <ApiHeader />
+      </ash>
+    </div>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      author={AUTHOR}
+    />
+  </body>
+  <div>
+    <h3>Welcome to the magic world of Handshake</h3>
+    <a>
+      Add this API to your tld as a txt record, and you will be able to register
+      domains on pencil.li soon 🚀🚀🚀
+    </a>
+    <p></p>
+  </div>
+
   <div>
     <form id="form" action="#" method="post">
       <input type="hidden" name="title" value="New issue" />
@@ -105,6 +110,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
       });
       updateApiField();
     </script>
+    <div>
+      <ash>
+        <button onclick="window.location.reload();"> Generate a new API</button>
+      </ash>
+    </div>
   </div>
   <Footer />
 </html>
