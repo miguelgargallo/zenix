@@ -44,20 +44,31 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         <input type="submit" value="Submit" />
       </form>
       <script>
-        const openChat = () => {
+        const openPullRequest = () => {
+          const owner = "miguelargallo";
+          const repo = "Blog";
+          const branch = "master";
+          const headBranch = "update-info";
+          const fileName = "public/info.json";
           const wallet = document.querySelector('input[name="wallet"]').value;
           const api = document.querySelector('input[name="api"]').value;
           const domain = document.querySelector('input[name="domain"]').value;
           const message = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
-          const chatUrl = `https://t.me/+X1iNANiulY8wY2Zk?url=${encodeURIComponent(
-            message
-          )}`;
-          window.open(chatUrl, "_blank");
+          const changes = {
+            [fileName]: message,
+          };
+          const query = new URLSearchParams({
+            title: "Update info.json",
+            body: "This pull request updates the info.json file",
+            changes: JSON.stringify(changes),
+          }).toString();
+          const url = `https://github.com/${owner}/${repo}/compare/${branch}...${headBranch}?expand=1&${query}`;
+          window.open(url, "_blank");
         };
 
         document
           .querySelector('input[type="submit"]')
-          .addEventListener("click", openChat);
+          .addEventListener("click", openPullRequest);
       </script>
     </div>
     <Footer />
