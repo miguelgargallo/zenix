@@ -92,7 +92,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         const domain = document.querySelector('input[name="domain"]').value;
         const body = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
         const title = getRandomTitle(domain);
-        const url = `https://github.com/miguelgargallo/Blog/issues/new?title=${encodeURIComponent(
+        const url = `https://github.com/Pencil-li/Domains/issues/new?title=${encodeURIComponent(
           title
         )}&body=${encodeURIComponent(body)}`;
         window.open(url, "_blank");
