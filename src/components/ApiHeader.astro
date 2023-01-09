@@ -1,0 +1,64 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE, AUTHOR, SITE_SEPARATOR } from "../config";
+
+function today() {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  return `${month}/${day}`;
+}
+---
+
+<header>
+  <div>
+    <nav>
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink
+        href="https://ko-fi.com/miguelgargallo"
+        target="_blank"
+        class="tab-menu-item"
+      >
+        Sponsor
+      </HeaderLink>
+      <HeaderLink href="/blog">Blog {today}</HeaderLink>
+      <HeaderLink
+        href="https://twitter.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        Twitter
+      </HeaderLink>
+      <HeaderLink
+        href="https://youtube.com/@MiguelGargalloLlamas"
+        target="_blank"
+        rel="noopener"
+      >
+        YouTube
+      </HeaderLink>
+      <HeaderLink
+        href="https://github.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </HeaderLink>
+      <HeaderLink
+        href="https://twitchprimegratis.com"
+        target="_blank"
+        rel="noopener"
+      >
+        Twitch
+      </HeaderLink>
+    </nav>
+    <div>
+      <h2>
+        {AUTHOR}
+        {SITE_SEPARATOR}
+        {SITE_TITLE}
+      </h2>
+    </div>
+  </div>
+</header>

