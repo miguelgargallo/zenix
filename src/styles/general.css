@@ -23,6 +23,19 @@ article {
     text-align: justify;
 }
 
+text {
+    /* article center and margin 40px, text like apple guidelines, and beauty present to perfect read display */
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: left;
+    font-family: "SF Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+    text-align: justify;
+}
+
 div ash {
     /* div ash center and margin 40px */
     margin: 100px;
