@@ -1,0 +1,34 @@
+---
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <p>
+      JavaScript is a programming language that adds interactivity to your
+      website.
+    </p>
+    <p>
+      This is a random number: <span id="random"></span>
+    </p>
+    <div>
+      <script>
+        // generate a random string of 244 characters, that begins with "miguel=(the random string)"
+        var x =
+          "cil=" + // now the 42 characters of the random string
+          Math.random().toString(36).substring(2, 15) +
+          Math.random().toString(36).substring(2, 15) +
+          Math.random().toString(36).substring(2, 16) +
+          Math.random().toString(36).substring(2, 12);
+        // show the number in the console
+        console.log(x);
+        // show the number in the browser
+        document.getElementById("random").innerHTML = x;
+      </script>
+    </div>
+  </body>
+</html>

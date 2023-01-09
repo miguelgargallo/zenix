@@ -18,6 +18,5 @@ pnpm-debug.log*
 .DS_Store
 .trash
 src/components/db.js
-src/components/ApiCodeGenerator.astro
-src/pages/welcome.astro
+src/components/Id.md
 info.md
