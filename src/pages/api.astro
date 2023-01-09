@@ -59,9 +59,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 
       function getRandomTitle(domain) {
         const titles = [
-          `Add ${domain} to this f* awesome registry 🔥🔥🔥`,
-          `Eth suc* 💧💧💧 add ${domain} to this amazing project`,
-          `H A N D S H A K E and my tld ${domain} 🚀🚀🚀 rocks`,
+          `[Domain] Add .${domain} to this f* awesome registry 🔥🔥🔥`,
+          `[Domain] Eth suc* 💧💧💧 add .${domain} to this amazing world of HNS`,
+          `[Domain] H A N D S H A K E and my tld .${domain} 🚀🚀🚀 rocks`,
+          `[Domain] HNS is the future, add .${domain} to this registry`,
+          `[Domain] WHY NOT .${domain} 🤷‍♂️🤷‍♂️🤷‍♂️ on Handshake registry`,
+          `[Domain] Add .${domain} to Handshake, ✨✨✨ it's awesome`,
         ];
         const index = Math.floor(Math.random() * titles.length);
         return titles[index];
