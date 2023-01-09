@@ -3,7 +3,6 @@ layout: "../layouts/BlogPost.astro"
 title: "About Me"
 description: "Lorem ipsum dolor sit amet"
 updatedDate: "August 08 2022"
-heroImage: "https://raw.githubusercontent.com/miguelgargallo/Blog/master/public/placeholder-about.jpg"
 ---
 
 # About my online presence
