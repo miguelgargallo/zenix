@@ -18,7 +18,3 @@ pnpm-debug.log*
 .DS_Store
 .trash
 src/components/db.js
-src/components/Id.md
-info.md
-src/pages/telegram.md
-src/pages/api.py

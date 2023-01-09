@@ -2,7 +2,7 @@
 import Tag from "../components/Tag.astro";
 import Ga from "../components/Ga.astro";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+import ApiHeader from "../components/ApiHeader.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 ---
@@ -10,7 +10,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 <html lang="en">
   <head>
     <Tag />
-  </head><div>
+  </head>
+  <div>
     <ash>
       <BaseHead
         title={SITE_TITLE}
@@ -22,55 +23,71 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 
   <body>
     <Ga />
-    <Header />
+    <ApiHeader />
     <p>
-      This is an API random generator: <span id="random"></span>
+      <!-- Display unicorn emoji in broswers in ascii -->
+
+      Welcome to the magic world of Handshake
     </p>
-    <div>
-      <script>
-        var x =
-          "cil=" +
+  </body>
+  <div>
+    <form id="form" action="#" method="post">
+      <p>Your Wallet | Don't touch this! |</p>
+      <input type="hidden" name="title" value="New issue" />
+      <input type="text" name="wallet" placeholder="hns wallet" />
+      <input
+        type="text"
+        name="api"
+        placeholder="api"
+        value="cil"
+        disabled
+        hidden
+      />
+      <input type="text" name="domain" placeholder="domain" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function updateApiField() {
+        const apiField = document.querySelector('input[name="api"]');
+        apiField.value =
+          "cil" +
           Math.random().toString(36).substring(2, 15) +
           Math.random().toString(36).substring(2, 15) +
           Math.random().toString(36).substring(2, 16) +
           Math.random().toString(36).substring(2, 12);
-        console.log(x);
-        document.getElementById("random").innerHTML = x;
-      </script>
-      <form action="/api/submit" method="post">
-        <input type="text" name="wallet" placeholder="hns wallet" />
-        <input type="text" name="api" placeholder="api" />
-        <input type="text" name="domain" placeholder="domain" />
-        <input type="submit" value="Submit" />
-      </form>
-      <script>
-        const openPullRequest = () => {
-          const owner = "miguelargallo";
-          const repo = "Blog";
-          const branch = "master";
-          const headBranch = "update-info";
-          const fileName = "public/info.json";
-          const wallet = document.querySelector('input[name="wallet"]').value;
-          const api = document.querySelector('input[name="api"]').value;
-          const domain = document.querySelector('input[name="domain"]').value;
-          const message = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
-          const changes = {
-            [fileName]: message,
-          };
-          const query = new URLSearchParams({
-            title: "Update info.json",
-            body: "This pull request updates the info.json file",
-            changes: JSON.stringify(changes),
-          }).toString();
-          const url = `https://github.com/${owner}/${repo}/compare/${branch}...${headBranch}?expand=1&${query}`;
-          window.open(url, "_blank");
-        };
+      }
 
-        document
-          .querySelector('input[type="submit"]')
-          .addEventListener("click", openPullRequest);
-      </script>
-    </div>
-    <Footer />
-  </body>
+      function getRandomTitle(domain) {
+        const titles = [
+          `[Domain] Add .${domain} to this f* awesome registry 🔥🔥🔥`,
+          `[Domain] Eth suc* 💧💧💧 add .${domain} to this amazing world of HNS`,
+          `[Domain] H A N D S H A K E and my tld .${domain} 🚀🚀🚀 rocks`,
+          `[Domain] HNS is the future, add .${domain} to this registry`,
+          `[Domain] WHY NOT .${domain} 🤷‍♂️🤷‍♂️🤷‍♂️ on Handshake registry`,
+          `[Domain] Add .${domain} to Handshake, ✨✨✨ it's awesome`,
+        ];
+        const index = Math.floor(Math.random() * titles.length);
+        return titles[index];
+      }
+
+      const form = document.querySelector("#form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const wallet = document.querySelector('input[name="wallet"]').value;
+        const api = document.querySelector('input[name="api"]').value;
+        const domain = document.querySelector('input[name="domain"]').value;
+        const body = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
+        const title = getRandomTitle(domain);
+        const url = `https://github.com/miguelgargallo/Blog/issues/new?title=${encodeURIComponent(
+          title
+        )}&body=${encodeURIComponent(body)}`;
+        window.open(url, "_blank");
+      });
+
+      updateApiField();
+    </script>
+  </div>
+  <Footer />
 </html>
