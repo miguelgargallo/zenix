@@ -122,4 +122,8 @@ input {
     .horizontal-scroll {
         display: none;
     }
+
+    pill {
+        display: none;
+    }
 }
