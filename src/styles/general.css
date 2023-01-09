@@ -45,6 +45,21 @@ code {
     font-family: monospace;
 }
 
+pill {
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px 10px 10px;
+    font-style: italic;
+    font-family: monospace;
+    box-shadow: 0 0 0 1px #ff00006e, 0 0 0 2px #ff7f006e, 0 0 0 3px #ffff006e, 0 0 0 4px #00ff006e, 0 0 0 5px #0000ff6e, 0 0 0 6px #4b00826e, 0 0 0 7px #9400d36e;
+    background-image: linear-gradient(to right, #ff00006e, #ff7f006e, #ffff006e, #00ff006e, #0000ff6e, #4b00826e, #9400d36e);
+}
+
+pill a {
+    color: #000;
+    text-decoration: none;
+}
+
 pre {
     padding: 1rem;
     font-family: monospace;

@@ -13,18 +13,35 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
   </head>
   <div>
     <ash>
+      <pill>
+        <a
+          href="https://pridefoundation.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reload everytime you submit a domain v3.0.0, this is in Beta, and is
+          not defined yet</a
+        >
+      </pill>
+    </ash>
+
+    <body>
+      <Ga />
+      <div>
+        <ash>
+          <ApiHeader />
+        </ash>
+      </div>
       <BaseHead
         title={SITE_TITLE}
         description={SITE_DESCRIPTION}
         author={AUTHOR}
       />
-    </ash>
+    </body>
+    <div>
+      <h3>Welcome to the magic world of Handshake</h3>
+    </div>
   </div>
-  <body>
-    <Ga />
-    <ApiHeader />
-    <p>Welcome to the magic world of Handshake</p>
-  </body>
   <div>
     <form id="form" action="#" method="post">
       <input type="hidden" name="title" value="New issue" />
@@ -39,6 +56,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
       />
       <input type="text" name="domain" placeholder="Your TLD" />
       <input type="submit" value="Submit" />
+      <p>
+        By submitting, you agree to the <a
+          href="https://www.pencil.li/support-tos">Terms of Service</a
+        > and <a href="https://www.pencil.li/support-pp">Privacy Policy</a>
+      </p>
     </form>
     <script>
       function updateApiField() {
