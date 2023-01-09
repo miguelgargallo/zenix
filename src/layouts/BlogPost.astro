@@ -44,14 +44,20 @@ const {
         }
 
         <h1 class="title">{title}</h1>
-        {pubDate && <time>{pubDate}</time>}
+        {
+          pubDate && (
+            <time>
+              <div>Published on {pubDate}</div>{" "}
+            </time>
+          )
+        }
         {
           updatedDate && (
             <>
               <div>
                 Last updated on <time>{updatedDate}</time>
               </div>
-              <p>{author}</p>
+              <p>Author: {author}</p>
             </>
           )
         }

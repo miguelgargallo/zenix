@@ -1,34 +1,32 @@
 ---
 layout: "../layouts/BlogPost.astro"
-title: "About Me"
-description: "Lorem ipsum dolor sit amet"
-updatedDate: "August 08 2022"
+title: "About My Online Presence"
+description: "About Miguel Gargallo, his online presence and his projects."
+updatedDate: "August 09 2022"
+pubDate: "Jan 06 2023"
 ---
 
-# About my online presence
-
-- [About my online presence](#about-my-online-presence)
-  - [About Pencil Works LLC](#about-pencil-works-llc)
-    - [Services](#services)
-  - [Pencil Works LLC](#pencil-works-llc)
-    - [Pencil Apps](#pencil-apps)
-    - [Pencil University](#pencil-university)
-        - [Road to your start-up](#road-to-your-start-up)
-        - [Filosofía](#filosofía)
-        - [Fundamentos de Psicobiología](#fundamentos-de-psicobiología)
-        - [Así concibo el universo](#así-concibo-el-universo)
-        - [36 PREGUNTAS DE RELACIONES LABORALES](#36-preguntas-de-relaciones-laborales)
-        - [Planificación y Análisis de Empresas Tema 1 y Tema 2](#planificación-y-análisis-de-empresas-tema-1-y-tema-2)
-        - [Microeconomía Apunts Útils](#microeconomía-apunts-útils)
-        - [Derecho Civil y Mercantil I](#derecho-civil-y-mercantil-i)
-        - [Desarrollo Profesional II](#desarrollo-profesional-ii)
-    - [Pencil Domains](#pencil-domains)
-    - [Pencil TV](#pencil-tv)
-  - [SuperData, a Pencil Works LLC Project](#superdata-a-pencil-works-llc-project)
-    - [Superdata Apps](#superdata-apps)
-    - [Superdata Dev](#superdata-dev)
-    - [Superdata Cloud](#superdata-cloud)
-  - [PyLar Org, a company project of Pencil Works LLC](#pylar-org-a-company-project-of-pencil-works-llc)
+- [About Pencil Works LLC](#about-pencil-works-llc)
+  - [Services](#services)
+- [Pencil Works LLC](#pencil-works-llc)
+  - [Pencil Apps](#pencil-apps)
+  - [Pencil University](#pencil-university)
+      - [Road to your start-up](#road-to-your-start-up)
+      - [Filosofía](#filosofía)
+      - [Fundamentos de Psicobiología](#fundamentos-de-psicobiología)
+      - [Así concibo el universo](#así-concibo-el-universo)
+      - [36 PREGUNTAS DE RELACIONES LABORALES](#36-preguntas-de-relaciones-laborales)
+      - [Planificación y Análisis de Empresas Tema 1 y Tema 2](#planificación-y-análisis-de-empresas-tema-1-y-tema-2)
+      - [Microeconomía Apunts Útils](#microeconomía-apunts-útils)
+      - [Derecho Civil y Mercantil I](#derecho-civil-y-mercantil-i)
+      - [Desarrollo Profesional II](#desarrollo-profesional-ii)
+  - [Pencil Domains](#pencil-domains)
+  - [Pencil TV](#pencil-tv)
+- [SuperData, a Pencil Works LLC Project](#superdata-a-pencil-works-llc-project)
+  - [Superdata Apps](#superdata-apps)
+  - [Superdata Dev](#superdata-dev)
+  - [Superdata Cloud](#superdata-cloud)
+- [PyLar Org, a company project of Pencil Works LLC](#pylar-org-a-company-project-of-pencil-works-llc)
 
 ## About Pencil Works LLC
 
