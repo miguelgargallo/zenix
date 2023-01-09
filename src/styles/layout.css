@@ -93,6 +93,7 @@ table {
     }
 }
 
+
 .profile {
     border-radius: 50%;
     width: 100px;
@@ -107,6 +108,7 @@ table {
     flex-direction: column;
 }
 
+/* bio is a paragraph, make it 16px font size and 1.6 line height */
 .bio {
     font-size: 16px;
     line-height: 1.6;
