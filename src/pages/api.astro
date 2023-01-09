@@ -1,17 +1,28 @@
 ---
+import Tag from "../components/Tag.astro";
+import Ga from "../components/Ga.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 ---
 
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>JavaScript</title>
-  </head>
+    <Tag />
+  </head><div>
+    <ash>
+      <BaseHead
+        title={SITE_TITLE}
+        description={SITE_DESCRIPTION}
+        author={AUTHOR}
+      />
+    </ash>
+  </div>
+
   <body>
-    <h1>JavaScript</h1>
-    <p>
-      JavaScript is a programming language that adds interactivity to your
-      website.
-    </p>
+    <Ga />
+    <Header />
     <p>
       This is a random number: <span id="random"></span>
     </p>
@@ -31,4 +42,5 @@
       </script>
     </div>
   </body>
+  <Footer />
 </html>
