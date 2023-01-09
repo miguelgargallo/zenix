@@ -20,15 +20,10 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
       />
     </ash>
   </div>
-
   <body>
     <Ga />
     <ApiHeader />
-    <p>
-      <!-- Display unicorn emoji in broswers in ascii -->
-
-      Welcome to the magic world of Handshake
-    </p>
+    <p>Welcome to the magic world of Handshake</p>
   </body>
   <div>
     <form id="form" action="#" method="post">
@@ -45,7 +40,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
       <input type="text" name="domain" placeholder="Your TLD" />
       <input type="submit" value="Submit" />
     </form>
-
     <script>
       function updateApiField() {
         const apiField = document.querySelector('input[name="api"]');
@@ -56,7 +50,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
           Math.random().toString(36).substring(2, 16) +
           Math.random().toString(36).substring(2, 12);
       }
-
       function getRandomTitle(domain) {
         const titles = [
           `[Domain] Add .${domain} to this f* awesome registry 🔥🔥🔥`,
@@ -69,11 +62,9 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         const index = Math.floor(Math.random() * titles.length);
         return titles[index];
       }
-
       const form = document.querySelector("#form");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-
         const wallet = document.querySelector('input[name="wallet"]').value;
         const api = document.querySelector('input[name="api"]').value;
         const domain = document.querySelector('input[name="domain"]').value;
@@ -84,7 +75,6 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
         )}&body=${encodeURIComponent(body)}`;
         window.open(url, "_blank");
       });
-
       updateApiField();
     </script>
   </div>
