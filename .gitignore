@@ -17,3 +17,7 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 .trash
+src/components/db.js
+src/components/ApiCodeGenerator.astro
+src/pages/welcome.astro
+info.md
