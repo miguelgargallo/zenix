@@ -2,6 +2,14 @@
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE, AUTHOR, SITE_SEPARATOR } from "../config";
 import Shortcuts from "./Shortcuts.astro";
+
+function today() {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  return `${month}/${day}`;
+}
 ---
 
 <header>
@@ -9,26 +17,42 @@ import Shortcuts from "./Shortcuts.astro";
     <Shortcuts />
     <nav>
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
-      <a
+      <HeaderLink
         href="https://ko-fi.com/miguelgargallo"
         target="_blank"
-        class="tab-menu-item">Sponsor</a
+        class="tab-menu-item"
       >
-      <HeaderLink href="https://twitter.com/miguelgargallo" target="_blank" rel="noopener">
+        Sponsor
+      </HeaderLink>
+      <HeaderLink href="/blog">Blog {today}</HeaderLink>
+      <HeaderLink
+        href="https://twitter.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
         Twitter
-      </HeaderLink>
-      <HeaderLink href="https://github.com/miguelgargallo" target="_blank" rel="noopener">
-        GitHub
-      </HeaderLink>
-      <HeaderLink href="https://twitchprimegratis.com" target="_blank" rel="noopener">
-        Twitch
       </HeaderLink>
       <HeaderLink
         href="https://youtube.com/@MiguelGargalloLlamas"
-        target="_blank" rel="noopener">
+        target="_blank"
+        rel="noopener"
+      >
         YouTube
+      </HeaderLink>
+      <HeaderLink
+        href="https://github.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </HeaderLink>
+      <HeaderLink
+        href="https://twitchprimegratis.com"
+        target="_blank"
+        rel="noopener"
+      >
+        Twitch
       </HeaderLink>
     </nav>
     <div>

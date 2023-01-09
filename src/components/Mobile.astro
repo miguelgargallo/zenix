@@ -1,6 +1,16 @@
+---
+function today() {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  return `${month}/${day}`;
+}
+---
+
 <nav class="tab-menu">
   <a href="/" class="tab-menu-item active">Home</a>
-  <a href="/blog" class="tab-menu-item">Blog</a>
+  <a href="/blog">Blog {today}</a>
   <a
     href="https://ko-fi.com/miguelgargallo"
     target="_blank"
