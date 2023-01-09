@@ -11,11 +11,13 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
   <head>
     <Tag />
   </head><div>
-    <BaseHead
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
-      author={AUTHOR}
-    />
+    <ash>
+      <BaseHead
+        title={SITE_TITLE}
+        description={SITE_DESCRIPTION}
+        author={AUTHOR}
+      />
+    </ash>
   </div>
 
   <body>
@@ -65,6 +67,4 @@ import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
 
     <Footer />
   </main>
-
-
 </html>
