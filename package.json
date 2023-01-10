@@ -1,5 +1,5 @@
 {
-  "name": "@example/blog",
+  "name": "astroblog",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -15,7 +15,6 @@
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "astro": "^1.9.0",
-    "pg": "^8.8.0",
     "pocketbase": "^0.10.0"
   }
 }
