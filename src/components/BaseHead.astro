@@ -4,6 +4,7 @@
 import "../styles/general.css";
 import "../styles/layout.css";
 import "../styles/typography.css";
+import "../styles/icons.css";
 
 export interface Props {
   title: string;
@@ -59,3 +60,9 @@ const {
 <meta property="twitter:author" content={author} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 <meta name="twitter:creator" content="@miguelgargallo" />
+
+<!-- Google / Search Engine Tags -->
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
