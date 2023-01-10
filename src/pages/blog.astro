@@ -18,15 +18,12 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
 <html lang="en">
   <head>
     <Tag />
-    <!-- Link th shortcuts.js
-    <script src="../pages/shortcuts.js"></script>  -->
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Ga />
     <Header />
     <div>
-      <!-- Add JavaScript to redirect to /blog when a day square is clicked -->
       <script>
         const daySquares = document.querySelectorAll(".day-square");
         daySquares.forEach((daySquare) => {
@@ -35,7 +32,6 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           });
         });
       </script>
-
       <section>
         <ul>
           {
@@ -57,7 +53,6 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           }
         </ul>
       </section>
-
       <Footer />
     </div>
   </body>
