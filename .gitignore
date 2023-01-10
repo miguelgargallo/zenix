@@ -29,3 +29,4 @@ src/pages/login2.astro
 src/pages/api/api.astro
 src/styles/login.css
 src/pages/other.md
+src/pages/api/nothing.md
