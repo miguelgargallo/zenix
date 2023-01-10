@@ -1,0 +1,54 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+function today() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    return `${month}/${day}`;
+}
+---
+
+<div>
+    <nav>
+        <HeaderLink href="/">Home</HeaderLink>
+        <HeaderLink href="/about">About</HeaderLink>
+        <HeaderLink href="/api">Handshake</HeaderLink>
+        <HeaderLink
+            href="https://ko-fi.com/miguelgargallo"
+            target="_blank"
+            class="tab-menu-item"
+        >
+            Sponsor
+        </HeaderLink>
+        <HeaderLink href="/blog">Blog {today}</HeaderLink>
+        <HeaderLink
+            href="https://twitter.com/miguelgargallo"
+            target="_blank"
+            rel="noopener"
+        >
+            Twitter
+        </HeaderLink>
+        <HeaderLink
+            href="https://www.youtube.com/@MiguelGargalloLlamas"
+            target="_blank"
+            rel="noopener"
+        >
+            YouTube
+        </HeaderLink>
+        <HeaderLink
+            href="https://github.com/miguelgargallo"
+            target="_blank"
+            rel="noopener"
+        >
+            GitHub
+        </HeaderLink>
+        <HeaderLink
+            href="https://twitchprimegratis.com"
+            target="_blank"
+            rel="noopener"
+        >
+            Twitch
+        </HeaderLink>
+    </nav>
+</div>

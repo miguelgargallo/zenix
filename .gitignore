@@ -21,3 +21,4 @@ src/components/db.js
 src/layouts/BookHead.astro
 src/layouts/BookPage.astro
 src/pages/book.astro
+src/pages/blog/Ultimate-React-Guide.mdx
