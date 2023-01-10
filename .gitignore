@@ -18,3 +18,6 @@ pnpm-debug.log*
 .DS_Store
 .trash
 src/components/db.js
+src/layouts/BookHead.astro
+src/layouts/BookPage.astro
+src/pages/book.astro
