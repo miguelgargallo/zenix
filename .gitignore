@@ -21,7 +21,6 @@ src/components/db.js
 src/layouts/BookHead.astro
 src/layouts/BookPage.astro
 src/pages/book.astro
-src/pages/blog/Ultimate-React-Guide.mdx
 db
 backend
 src/pages/login.astro
@@ -30,3 +29,4 @@ src/pages/api/api.astro
 src/styles/login.css
 src/pages/other.md
 src/pages/api/nothing.md
+kingsleague.mdx

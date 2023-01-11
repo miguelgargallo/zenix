@@ -1,0 +1,52 @@
+---
+import Tag from "../components/Tag.astro";
+import Ga from "../components/Ga.astro";
+import BaseHead from "../components/BaseHead.astro";
+import ApiHeader from "../components/ApiHeader.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
+---
+
+<html lang="en">
+    <head>
+        <Tag />
+    </head>
+    <div>
+        <ash>
+            <BaseHead
+                title={SITE_TITLE}
+                description={SITE_DESCRIPTION}
+                author={AUTHOR}
+            />
+        </ash>
+    </div>
+    <body>
+        <Ga />
+        <ApiHeader />
+        <div>
+            <script>
+                // first we contact to database
+                import PocketBase from "pocketbase";
+                const pb = new PocketBase("http://127.0.0.1:8090");
+                // then we login wiht functions and form
+                const login = async () => {
+                    const username = document.getElementById("username").value;
+                    const password = document.getElementById("password").value;
+                    const response = await pb.login(username, password);
+                    if (response.status === 200) {
+                        // then we redirect to dashboard
+                        console.log("login success");
+                    } else {
+                        console.log("login failed");
+                        // if not we show error
+                    }
+                };
+            </script>
+            <form>
+                <input type="text" id="username" placeholder="username" />
+                <input type="password" id="password" placeholder="password" />
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div></body
+    >
+</html>
