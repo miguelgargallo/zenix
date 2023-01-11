@@ -1,6 +1,4 @@
 body {
-    position: absflexolute;
-    padding: 10px;
     font-family: monospace;
     font-size: 16px;
     line-height: 1.5;
@@ -21,6 +19,12 @@ article {
     background-color: #fff;
     text-align: justify;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 text {
     margin: 40px auto;
@@ -77,11 +81,6 @@ blockquote {
     margin: 0px;
     font-style: italic;
     font-family: monospace;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 input {

@@ -1,8 +1,8 @@
 {
   "name": "zenix",
-  "description": "High-quality, cutting-edge framework, and modern blog starter pack.",
+  "description": "High-quality, cutting-edge framework and modern blog starter pack.",
   "type": "module",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": false,
   "scripts": {
     "dev-zenix": "astro dev",

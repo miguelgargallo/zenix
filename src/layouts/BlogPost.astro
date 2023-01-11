@@ -25,6 +25,8 @@ const {
   <head>
     <Tag />
     <BaseHead title={title} description={description} />
+    <meta name="keywords" content="blog, posts, articles" />
+    <meta name="robots" content="index, follow" />
   </head>
 
   <body>
@@ -32,36 +34,32 @@ const {
     <Header />
     <main>
       <article>
-        {
-          heroImage && (
-            <img
-              width={720}
-              height={360}
-              src="/public/placeholder-hero.jpg"
-              alt="miguel gargallo on a stage with Pencil keynote"
-            />
-          )
-        }
-
-        <h1 class="title">{title}</h1>
-        {
-          pubDate && (
-            <time>
-              <div>Published on {pubDate}</div>{" "}
-            </time>
-          )
-        }
-        {
-          updatedDate && (
-            <>
-              <div>
-                Last updated on <time>{updatedDate}</time>
-              </div>
-              <p>Author: {author}</p>
-            </>
-          )
-        }
+        <header>
+          <h1 class="title">{title}</h1>
+          {
+            pubDate && (
+              <time>
+                <div>Published on {pubDate}</div>{" "}
+              </time>
+            )
+          }
+          {
+            updatedDate && (
+              <>
+                <div>
+                  Last updated on <time>{updatedDate}</time>
+                </div>
+                <p>Author: {author}</p>
+              </>
+            )
+          }
+        </header>
         <hr />
+        <img
+          class="img-fluid"
+          src={heroImage}
+          alt={`${title} - ${description}`}
+        />
         <slot />
       </article>
     </main>
