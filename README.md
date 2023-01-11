@@ -1,4 +1,4 @@
-# 🖋️ About MyBlog framework
+# 🖋️ About Zenix framework
 
 This project is a framework based on a fork of [astro-starter-kit](https://astro.build), so this is a modified version of the default template.
 
