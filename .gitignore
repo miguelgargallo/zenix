@@ -30,3 +30,4 @@ src/styles/login.css
 src/pages/other.md
 src/pages/api/nothing.md
 kingsleague.mdx
+src/pages/register.astro
