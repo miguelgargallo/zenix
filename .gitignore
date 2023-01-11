@@ -16,19 +16,14 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-.trash
 src/components/db.js
 src/layouts/BookHead.astro
 src/layouts/BookPage.astro
 src/pages/book.astro
-db
+
+# Zenix specific files
+.trash
+.tools
 backend
-src/pages/login.astro
-src/pages/login2.astro
-src/pages/api/api.astro
-src/styles/login.css
-src/pages/other.md
-src/pages/api/nothing.md
-kingsleague.mdx
-src/pages/register.astro
-src/pages/blog/.Ultimate-React-Guide.mdx
+db
+src/pages/profile
