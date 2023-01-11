@@ -26,12 +26,15 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
     <Header />
     <main>
       <section>
-        <ul>
+        <div>
           {
             posts.map((post) => (
-              <li>
-                <p>{post.frontmatter.tags.join(" ")}</p>
+              <div className="post">
+                <p>
+                  <strong>Tags: </strong> {post.frontmatter.tags.join(" ")}
+                </p>
                 <time datetime={post.frontmatter.pubDate}>
+                  <strong>Date: </strong>{" "}
                   {new Date(post.frontmatter.pubDate).toLocaleDateString(
                     "en-us",
                     {
@@ -41,12 +44,17 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
                     }
                   )}
                 </time>
-                <a href={post.url}>{post.frontmatter.title}</a>
-                <p>{post.frontmatter.description}</p>
-              </li>
+                <a href={post.url}>
+                  <h3>{post.frontmatter.title}</h3>
+                </a>
+                <p>
+                  <strong>Description: </strong>
+                  {post.frontmatter.description}
+                </p>
+              </div>
             ))
           }
-        </ul>
+        </div>
       </section>
     </main>
     <Footer />
