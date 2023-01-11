@@ -28,6 +28,47 @@ Based on the file structure you provided, it looks like your project is built us
 
 ```
 .
+├── src
+│   ├── pages
+│   │   ├── blog
+│   │   │   ├── Why-AI-is-a-Good-Resource-for-Any-Industry.mdx
+│   │   │   ├── AI-and-the-Advancement-of-Math-Science-Cryptography-and-Planets.mdx
+│   │   │   ├── Dont-buy-domains-buy-extensions.mdx
+│   │   │   ├── How-to-make-chatGPT-to-write-Readme-perfectly.mdx
+│   │   │   ├── Next13-and-Google-SEO.mdx
+│   │   │   ├── Software-License-Important.mdx
+│   │   │   ├── Using AI-to-Discover-New-Marine-Species.mdx
+│   │   │   └── iPhone-in-2025.mdx
+│   │   ├── License
+│   │   ├── about.md
+│   │   ├── api.astro
+│   │   ├── blog.astro
+│   │   ├── index.astro
+│   │   ├── projects.md
+│   │   └── rss.xml.js
+│   ├── components
+│   │   ├── ApiHeader.astro
+│   │   ├── BaseHead.astro
+│   │   ├── Calendar.astro
+│   │   ├── Copyright.astro
+│   │   ├── Footer.astro
+│   │   ├── Ga.astro
+│   │   ├── Header.astro
+│   │   ├── HeaderLink.astro
+│   │   ├── Menu.astro
+│   │   ├── Mobile.astro
+│   │   ├── Shortcuts.astro
+│   │   └── Tag.astro
+│   ├── config.ts
+│   ├── env.d.ts
+│   ├── layouts
+│   │   ├── BaseHead.astro
+│   │   └── BlogPost.astro
+│   └── styles
+│       ├── general.css
+│       ├── icons.css
+│       ├── layout.css
+│       └── typography.css
 ├── .api
 │   ├── API.js
 │   ├── License.md
@@ -55,47 +96,6 @@ Based on the file structure you provided, it looks like your project is built us
 │   ├── placeholder-about.jpg
 │   ├── placeholder-hero.jpg
 │   └── placeholder-social.jpeg
-├── src
-│   ├── components
-│   │   ├── ApiHeader.astro
-│   │   ├── BaseHead.astro
-│   │   ├── Calendar.astro
-│   │   ├── Copyright.astro
-│   │   ├── Footer.astro
-│   │   ├── Ga.astro
-│   │   ├── Header.astro
-│   │   ├── HeaderLink.astro
-│   │   ├── Menu.astro
-│   │   ├── Mobile.astro
-│   │   ├── Shortcuts.astro
-│   │   └── Tag.astro
-│   ├── config.ts
-│   ├── env.d.ts
-│   ├── layouts
-│   │   ├── BaseHead.astro
-│   │   └── BlogPost.astro
-│   ├── pages
-│   │   ├── License
-│   │   ├── about.md
-│   │   ├── api.astro
-│   │   ├── blog.astro
-│   │   ├── blog
-│   │   │   ├── AI-and-the-Advancement-of-Math-Science-Cryptography-and-Planets.mdx
-│   │   │   ├── Dont-buy-domains-buy-extensions.mdx
-│   │   │   ├── How-to-make-chatGPT-to-write-Readme-perfectly.mdx
-│   │   │   ├── Next13-and-Google-SEO.mdx
-│   │   │   ├── Software-License-Important.mdx
-│   │   │   ├── Using AI-to-Discover-New-Marine-Species.mdx
-│   │   │   ├── iPhone-in-2025.mdx
-│   │   │   └── why-AI.mdx
-│   │   ├── index.astro
-│   │   ├── projects.md
-│   │   └── rss.xml.js
-│   └── styles
-│       ├── general.css
-│       ├── icons.css
-│       ├── layout.css
-│       └── typography.css
 └── tsconfig.json
 ```
 
@@ -105,10 +105,9 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run db`           | Runs the database                                |
+| `npm i`                | Installs dependencies                            |
+| `npm run dev-zenix`    | Starts local dev server at `localhost:3000`      |
+| `npm run build-zenix`  | Build your production site to `./dist/`          |
 
 ## 📝 License
 
