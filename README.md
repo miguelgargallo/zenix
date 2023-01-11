@@ -1,6 +1,6 @@
 # 🖋️ About Zenix framework
 
-This project is a framework based on a fork of [astro-starter-kit](https://astro.build), so this is a modified version of the default template.
+This project is a framework based on a fork of astro-starter-kit, so this is a modified version of the default template.
 
 ## ✨ Features
 
@@ -12,6 +12,15 @@ Features:
 - ✅ Sitemap support
 - ✅ RSS Feed support
 - ✅ Markdown & MDX support
+- ✅ CSS full customization
+- ✅ Astro components
+- ✅ Database support
+- ✅ Github API support
+- ✅ Vercel deployable support
+- ✅ Pylar AI support
+- ✅ Improved posts
+- ✅ Modified layouts
+- ✅ Config customization support
 
 ## 🚀 Project Structure
 
@@ -19,6 +28,10 @@ Based on the file structure you provided, it looks like your project is built us
 
 ```
 .
+├── .api
+│   ├── API.js
+│   ├── License.md
+│   └── README.md
 ├── .github
 │   └── FUNDING.yml
 ├── .gitignore
@@ -27,9 +40,6 @@ Based on the file structure you provided, it looks like your project is built us
 │   └── launch.json
 ├── License.md
 ├── README.md
-├── api
-│   ├── API.js
-│   └── License.md
 ├── astro.config.mjs
 ├── package-lock.json
 ├── package.json
@@ -65,27 +75,21 @@ Based on the file structure you provided, it looks like your project is built us
 │   │   ├── BaseHead.astro
 │   │   └── BlogPost.astro
 │   ├── pages
-│   │   ├── License.md
+│   │   ├── License
 │   │   ├── about.md
 │   │   ├── api.astro
-│   │   ├── api
-│   │   │   └── License.md
 │   │   ├── blog.astro
 │   │   ├── blog
-│   │   │   ├── AI and the Advancement of Math, Science, Cryptography, and Planets.mdx
-│   │   │   ├── How to make chatGPT to write Readme perfectly copy.mdx
-│   │   │   ├── How to make chatGPT to write Readme perfectly.mdx
-│   │   │   ├── License.md
+│   │   │   ├── AI-and-the-Advancement-of-Math-Science-Cryptography-and-Planets.mdx
+│   │   │   ├── Dont-buy-domains-buy-extensions.mdx
+│   │   │   ├── How-to-make-chatGPT-to-write-Readme-perfectly.mdx
 │   │   │   ├── Next13-and-Google-SEO.mdx
-│   │   │   ├── Ultimate-React-Guide.mdx
-│   │   │   ├── Using AI to Discover New Marine Species.mdx
-│   │   │   ├── iPhone in 2025.mdx
+│   │   │   ├── Software-License-Important.mdx
+│   │   │   ├── Using AI-to-Discover-New-Marine-Species.mdx
+│   │   │   ├── iPhone-in-2025.mdx
 │   │   │   └── why-AI.mdx
-│   │   ├── book
-│   │   │   └── License.md
 │   │   ├── index.astro
 │   │   ├── projects.md
-│   │   ├── register.astro
 │   │   └── rss.xml.js
 │   └── styles
 │       ├── general.css
@@ -104,9 +108,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm install`          | Installs dependencies                            |
 | `npm run dev`          | Starts local dev server at `localhost:3000`      |
 | `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+| `npm run db`           | Runs the database                                |
 
 ## 📝 License
 

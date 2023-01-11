@@ -2,14 +2,15 @@
   "name": "zenix",
   "description": "High-quality, cutting-edge framework, and modern blog starter pack.",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev-zenix": "astro dev",
+    "start-zenix": "astro dev",
+    "build-zenix": "astro build",
+    "preview-zenix": "astro preview",
+    "astro-zenix": "astro",
+    "db-zenix": "cd db && ./pocketbase serve"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.14.0",
