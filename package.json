@@ -1,10 +1,10 @@
 {
   "name": "zenix",
-  "description": "High-quality, cutting-edge framework and modern blog starter pack.",
+  "description": "High-quality, remote control, cutting-edge framework and modern blog starter pack.",
   "type": "module",
   "license": "Pylar AI creative ML license",
   "author": "Miguel Gargallo",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "private": false,
   "scripts": {
     "db": "cd .. && cd backend && ./pocketbase serve",
