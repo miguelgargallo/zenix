@@ -1,18 +1,18 @@
 commands=( # Define commands in an array
-    "cd backend && ./pocketbase serve", #1 Launch Database
-    "npm run zenix", #2 Launch Dev Zenix
-    "npm run start-zenix", #3 Start Zenix
-    "npm run build-zenix", #4 Build Zenix
-    "npm run preview-zenix", #5 Preview Zenix
-    "npm run astro-zenix", #6 Rocket Zenix
-    "npm run clean-zenix", #7 Clean Zenix
-    "rm -r bye-zenix", #8 Bye Zenix
-    "rm -r npm clean-dev-zenix", #9 Clean Dev Zenix
-    "rm -r npm clean-build-zenix", #0 Clean Build Zenix
-    "sudo rm -r npm sudo-clean-zenix", #q Sudo Clean Zenix
-    "sudo rm -r npm sudo-bye-zenix", #w Sudo Bye Zenix
-    "sudo rm -r npm sudo-clean-dev-zenix", #e Sudo Clean Dev Zenix
-    "sudo rm -r npm sudo-clean-build-zenix", #r Sudo Clean Build Zenix
+    "cd backend && ./pocketbase serve" #1 Launch Database
+    "npm run zenix" #2 Launch Dev Zenix
+    "npm run start-zenix" #3 Start Zenix
+    "npm run build-zenix" #4 Build Zenix
+    "npm run preview-zenix" #5 Preview Zenix
+    "npm run astro-zenix" #6 Rocket Zenix
+    "npm run clean-zenix" #7 Clean Zenix
+    "rm -r bye-zenix" #8 Bye Zenix
+    "rm -r npm clean-dev-zenix" #9 Clean Dev Zenix
+    "rm -r npm clean-build-zenix" #0 Clean Build Zenix
+    "sudo rm -r npm sudo-clean-zenix" #q Sudo Clean Zenix
+    "sudo rm -r npm sudo-bye-zenix" #w Sudo Bye Zenix
+    "sudo rm -r npm sudo-clean-dev-zenix" #e Sudo Clean Dev Zenix
+    "sudo rm -r npm sudo-clean-build-zenix" #r Sudo Clean Build Zenix
 )
 clear # Clear the terminal
 echo "  "
