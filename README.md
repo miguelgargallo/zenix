@@ -4,7 +4,7 @@ This project is a framework based on a fork of astro-starter-kit, so this is a m
 
 ## ✨ Features
 
-It contains the Zenix Remote
+🎁 It contains the Zenix Remote (github version 1.0.68 and npm version 0.0.17 Zenix npmjs)
 
 ![Zenix Remote](https://user-images.githubusercontent.com/5947268/212189978-7b24b4ad-bb43-4edf-b81b-f5df5a35783b.png)
 
