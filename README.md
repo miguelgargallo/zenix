@@ -4,6 +4,10 @@ This project is a framework based on a fork of astro-starter-kit, so this is a m
 
 ## ✨ Features
 
+It contains the Zenix Remote
+
+![Zenix Remote](https://user-images.githubusercontent.com/5947268/212189978-7b24b4ad-bb43-4edf-b81b-f5df5a35783b.png)
+
 Features:
 
 - ✅ Minimal styling (make it your own!)
