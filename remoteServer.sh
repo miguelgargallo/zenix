@@ -1,3 +1,7 @@
+# YOU NEED TO HAVE A SSH KEY TO ACCESS THE REMOTE SERVER
+# 2 FOLDERS NEEDED: backend and frontend
+# PLACE THIS ON THE ROOT OF THE PROJECT
+
 commands=( # Define commands in an array
     "cd backend && ./pocketbase serve" #1 Launch Database
     "cd frontend && npm run zenix" #2 Launch Dev Zenix
