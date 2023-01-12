@@ -110,8 +110,10 @@ All commands are run from the root of the project, from a terminal:
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
 | `npm i`                | Installs dependencies                            |
-| `npm run dev-zenix`    | Starts local dev server at `localhost:3000`      |
-| `npm run build-zenix`  | Build your production site to `./dist/`          |
+| `npm zenix`            | Starts local dev server at `localhost:3000`      |
+| `./remote.sh` *1       | Open the remote and don't type commands anymore  |
+
+*1: first 'chmod +x ./remote.sh' then './remote.sh'.
 
 ## 📝 License
 
