@@ -2,7 +2,7 @@
   "name": "zenix",
   "description": "High-quality, cutting-edge framework and modern blog starter pack.",
   "type": "module",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": false,
   "scripts": {
     "db": "cd backend && pocketbase serve",

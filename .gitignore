@@ -27,3 +27,4 @@ src/pages/book.astro
 backend
 db
 src/pages/profile
+.package.json
