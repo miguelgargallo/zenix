@@ -5,7 +5,8 @@
   "version": "0.0.13",
   "private": false,
   "scripts": {
-    "dev-zenix": "astro dev",
+    "db": "cd backend && pocketbase serve",
+    "zenix": "astro dev",
     "start-zenix": "astro dev",
     "build-zenix": "astro build",
     "preview-zenix": "astro preview",
@@ -15,7 +16,7 @@
     "@astrojs/mdx": "^0.14.0",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.9.0",
+    "astro": "^1.9.2",
     "pocketbase": "^0.10.0"
   }
 }
