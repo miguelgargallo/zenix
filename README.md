@@ -11,6 +11,7 @@ This project is a framework based on a fork of astro-starter-kit, so this is a m
 Features:
 
 - ✅ Minimal styling (make it your own!)
+- ✅ A remote control to use, like tv!
 - ✅ 100/100 Lighthouse performance
 - ✅ SEO-friendly with canonical URLs and OpenGraph data
 - ✅ Sitemap support
@@ -26,30 +27,55 @@ Features:
 - ✅ Modified layouts
 - ✅ Config customization support
 
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm i`                | Installs dependencies                            |
+| `npm zenix`            | Starts local dev server at `localhost:3000`      |
+| `./remote.sh` *1       | Open the remote and don't type commands anymore  |
+
+*1: first 'chmod +x ./remote.sh' then './remote.sh'.
+
 ## 🚀 Project Structure
 
 Based on the file structure you provided, it looks like your project is built using Astro, which is a static site generator. The .mdx files in the pages/blog directory are Markdown files with JSX, and they will be rendered as blog posts on your site. The .astro files are Astro components, which are used to build the structure of your site. The .css files in the styles directory contain styles that are applied to the site. The tsconfig.json file is for configuring TypeScript, a programming language that is a strict superset of JavaScript. The package.json file lists the project dependencies and scripts for building and running the project. The public directory contains assets such as images and icons that are used on the site. The .github and .vscode directories contain files related to using GitHub and Visual Studio Code, respectively. The README.md file contains information about the project, and the LICENSE.md file specifies the terms under which the project is licensed.
 
 ```
 .
+├── .api
+│   ├── API.js
+│   ├── License.md
+│   └── README.md
+├── .github
+│   └── FUNDING.yml
+├── .gitignore
+├── .vscode
+│   ├── extensions.json
+│   └── launch.json
+├── License.md
+├── README.md
+├── astro.config.mjs
+├── favicon.ico
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.icns
+│   ├── favicon.ico
+│   ├── favicon.png
+│   ├── favicon.svg
+│   ├── icon.icns
+│   ├── icon.ico
+│   ├── info.json
+│   ├── input.png
+│   ├── placeholder-about.jpg
+│   ├── placeholder-hero.jpg
+│   └── placeholder-social.jpeg
+├── remote.sh
+├── remoteServer.sh
 ├── src
-│   ├── pages
-│   │   ├── blog
-│   │   │   ├── Why-AI-is-a-Good-Resource-for-Any-Industry.mdx
-│   │   │   ├── AI-and-the-Advancement-of-Math-Science-Cryptography-and-Planets.mdx
-│   │   │   ├── Dont-buy-domains-buy-extensions.mdx
-│   │   │   ├── How-to-make-chatGPT-to-write-Readme-perfectly.mdx
-│   │   │   ├── Next13-and-Google-SEO.mdx
-│   │   │   ├── Software-License-Important.mdx
-│   │   │   ├── Using AI-to-Discover-New-Marine-Species.mdx
-│   │   │   └── iPhone-in-2025.mdx
-│   │   ├── License
-│   │   ├── about.md
-│   │   ├── api.astro
-│   │   ├── blog.astro
-│   │   ├── index.astro
-│   │   ├── projects.md
-│   │   └── rss.xml.js
 │   ├── components
 │   │   ├── ApiHeader.astro
 │   │   ├── BaseHead.astro
@@ -66,54 +92,31 @@ Based on the file structure you provided, it looks like your project is built us
 │   ├── config.ts
 │   ├── env.d.ts
 │   ├── layouts
-│   │   ├── BaseHead.astro
 │   │   └── BlogPost.astro
+│   ├── pages
+│   │   ├── License
+│   │   ├── about.md
+│   │   ├── api.astro
+│   │   ├── blog.astro
+│   │   ├── blog
+│   │   │   ├── ai-advancement-science.mdx
+│   │   │   ├── ai-costs-savings.mdx
+│   │   │   ├── ai-discover-marine-species.mdx
+│   │   │   ├── chatgpt-write-perfectly.mdx
+│   │   │   ├── domains-exetensions-handshake.mdx
+│   │   │   ├── iphone-future-apple.mdx
+│   │   │   ├── licenses-opensource-important.mdx
+│   │   │   └── ultimate-seo-guide-nextjs.mdx
+│   │   ├── index.astro
+│   │   ├── projects.md
+│   │   └── rss.xml.js
 │   └── styles
 │       ├── general.css
 │       ├── icons.css
 │       ├── layout.css
 │       └── typography.css
-├── .api
-│   ├── API.js
-│   ├── License.md
-│   └── README.md
-├── .github
-│   └── FUNDING.yml
-├── .gitignore
-├── .vscode
-│   ├── extensions.json
-│   └── launch.json
-├── License.md
-├── README.md
-├── astro.config.mjs
-├── package-lock.json
-├── package.json
-├── public
-│   ├── favicon.icns
-│   ├── favicon.ico
-│   ├── favicon.png
-│   ├── favicon.svg
-│   ├── icon.icns
-│   ├── icon.ico
-│   ├── info.json
-│   ├── input.png
-│   ├── placeholder-about.jpg
-│   ├── placeholder-hero.jpg
-│   └── placeholder-social.jpeg
 └── tsconfig.json
 ```
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm i`                | Installs dependencies                            |
-| `npm zenix`            | Starts local dev server at `localhost:3000`      |
-| `./remote.sh` *1       | Open the remote and don't type commands anymore  |
-
-*1: first 'chmod +x ./remote.sh' then './remote.sh'.
 
 ## 📝 License
 
