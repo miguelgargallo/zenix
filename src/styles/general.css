@@ -130,6 +130,10 @@ input {
         display: none;
     }
 
+    body {
+        margin: 80px 20px;
+    }
+
     pill {
         display: none;
     }
