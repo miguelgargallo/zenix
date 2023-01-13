@@ -16,6 +16,7 @@ Update | github 1.0.75 | npm 0.0.27 | Responsive | Remote | Pylar AI | Database 
 - ✅ Added a new layout for posts
 - ✅ Added a new css for mobile
 - ✅ Improved responsiveness
+- ✅ Fix Menu error when tapping on leaf
 - ✅ Fix margins
 - ✅ Fix menu
 - ✨ Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
