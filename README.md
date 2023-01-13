@@ -1,6 +1,8 @@
 # 🖋️ About Zenix framework
 - [🖋️ About Zenix framework](#️-about-zenix-framework)
-  - [-🚀 In this update](#--in-this-update)
+  - [✨ What is coming next?](#-what-is-coming-next)
+  - [🥰 Our Philosophy](#-our-philosophy)
+  - [🚀 In this update](#-in-this-update)
   - [🎁 Features](#-features)
   - [🧞 Commands](#-commands)
   - [🦄 Project Structure](#-project-structure)
@@ -8,19 +10,43 @@
 
 This project is a framework based on a fork of astro-starter-kit, so this is a modified version of the default template.
 
-## -🚀 In this update
+## ✨ What is coming next?
+
+- ✨ Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
+
+Zenix 1.1.0 will continue with the same strict philosophy of the framework, but with the addition of a database, so you can create your own backend and connect it to the frontend, and you can also use the Github API to connect to the backend.
+
+## 🥰 Our Philosophy
+
+Our philosophy is to work with less dependencies and only from very solid sources, by the moment you are:
+
+- "@astrojs/mdx": "^0.14.0",
+- "@astrojs/rss": "^2.0.0",
+- "@astrojs/sitemap": "^1.0.0",
+- "astro": "^1.9.2",
+
+It is included also PocketBase, always we work with the latest version possible, we know by the moment this is not a current feature of the project, but since internally we are devoloping with pocketbase, we are going to keep it updated and inside the package.json, it will be in this way, the way you will know what is coming next to Zenix Framework:
+
+- "pocketbase": "^0.10.0"
+
+We want to mantain the less dependencies possible, but we want to mantain the best quality possible, so we are only going to use what is strictly necessary. We present to you Croco, 🐊, we feed it with updates 😍😍😍 buuuuuuuuut! you can feed too with feedback here [🐊 LOVES YOUR FEEDBACK](https://github.com/miguelgargallo/Blog/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) Feed it!
+
+We are open for issues, so do not dishesitate to open an issue if you find something wrong, or if you want to suggest something, we are open for suggestions.
+
+
+## 🚀 In this update
+
+Update | github 1.0.77 | npm 0.0.30 | README NOW! | Remote | Pylar AI | Database | Github API | Vercel deployable | Astro components | CSS customization | Markdown & MDX support | SEO-friendly | Sitemap support | RSS Feed support | Lighthouse performance | 100/100
+
+- ✅ Improved Readme (Know who is Croco and our philosophy.)
+- ✅ Important notes on Readme read them!
+- ✅ We habilitated a zone for feedback! (Feed Croco!)
 
 Update | github 1.0.76 | npm 0.0.29 | Fix Menu | Responsive | Remote | Pylar AI | Database | Github API | Vercel deployable | Astro components | CSS customization | Markdown & MDX support | SEO-friendly | Sitemap support | RSS Feed support | Lighthouse performance | 100/100
 
 - ✅ Added a remote control to use, like tv!
-- ✅ Added a new layout for posts
-- ✅ Added a new css for mobile
-- ✅ Improved responsiveness
-- ✅ Fix Menu error when tapping on leaf
-- ✅ Fix Menu error when tapping on blog
-- ✅ Fix margins
-- ✅ Fix menu
-- ✨ Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
+- ✅ Improved responsiveness, now it is 100/100 in mobile, new layout for mobile and new css for mobile
+- ✅ Fix margins, menu, leaf and blog buttons
 
 ## 🎁 Features
 
