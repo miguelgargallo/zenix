@@ -1,0 +1,44 @@
+/* amazing.css */
+.menu-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* center the content */
+    justify-content: center;
+    /* padding de 5px en todos los lados */
+    padding: 5px;
+    /* margin de 5px en todos los lados */
+    margin: 5px;
+    /* subir un poco los iconos */
+    /* ocupa todo el ancho de la pantalla */
+    width: 100%;
+    /* ocupa todo el alto de la pantalla */
+    height: 100%;
+    /* margen de 5px en todos los lados, estilo dock del mac */
+    margin: 5px;
+    /* sombra */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* en hover */
+}
+
+.menu-mobile-item {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    margin-top: -8px;
+
+}
+
+.menu-mobile-item a {
+    color: #f5f5f5;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    /* center the content */
+
+}
+
+.menu-mobile-item i {
+    margin-bottom: 0.5em;
+}

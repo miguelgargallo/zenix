@@ -6,28 +6,26 @@ function today() {
   const year = date.getFullYear();
   return `${month}/${day}`;
 }
+
+import "../styles/mobile.css";
 ---
 
 <nav class="tab-menu">
-  <mobile>
-    <div>
-      <a href="/">
-        <span class="material-icons md-24">&#xea35</span>
+  <div class="menu-mobile">
+    <div class="menu-mobile-item">
+      <a href="/leaf">
+        <i class="material-icons md-24">eco</i>
       </a>
     </div>
-    <div>
-      <a href="/blog">
-        <span class="material-icons md-24">&#xeb81</span>
+    <div class="menu-mobile-item">
+      <a href="/newspaper">
+        <i class="material-icons md-24">newspaper</i>
       </a>
     </div>
-    <div>
-      <a
-        href="https://ko-fi.com/miguelgargallo"
-        target="_blank"
-        class="tab-menu-item"
-      >
-        <span class="material-icons md-24">&#xefef</span>
+    <div class="menu-mobile-item">
+      <a href="https://ko-fi.com/miguelgargallo" target="_blank">
+        <i class="material-icons md-24">local_cafe</i>
       </a>
     </div>
-  </mobile>
+  </div>
 </nav>
