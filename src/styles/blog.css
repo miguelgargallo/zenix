@@ -87,3 +87,35 @@
     /* shadow 0 */
 
 }
+
+/* Media Queries for different screen sizes */
+@media only screen and (max-width: 1200px) {
+
+    /* Reduce the width of the blog post on larger screens */
+    .blog-post {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* Reduce the width of the blog post on medium screens */
+    .blog-post {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Stack the blog posts vertically on small screens */
+    .blog-posts {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    /* Reduce the width of the blog post on small screens */
+    .blog-post {
+        width: 90%;
+        margin: 1em auto;
+    }
+}
