@@ -1,7 +1,7 @@
 ---
 import Tag from "../components/Tag.astro";
 import Ga from "../components/Ga.astro";
-import BaseHead from "../components/BaseHead.astro";
+import BlogBaseHead from "../components/BlogBaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
@@ -17,21 +17,25 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
 <html lang="en">
   <head>
     <Tag />
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BlogBaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <meta name="keywords" content="blog, posts, articles" />
     <meta name="robots" content="index, follow" />
+    <meta name="author" content="Siddharth Kshetrapal" />
   </head>
   <body>
     <Ga />
     <Header />
     <main>
       <section>
-        <div>
+        <div class="blog-posts">
           {
             posts.map((post) => (
-              <div className="post">
-                <p>
-                  <strong>Tags: </strong> {post.frontmatter.tags.join(" ")}
+              <div class="blog-post">
+                <p class="tags">
+                  <strong>Tags: </strong>
+                  {post.frontmatter.tags.map((tag) => (
+                    <span>{tag}</span>
+                  ))}
                 </p>
                 <time datetime={post.frontmatter.pubDate}>
                   <strong>Date: </strong>{" "}

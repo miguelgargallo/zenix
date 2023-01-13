@@ -1,0 +1,67 @@
+/* This class is applied to the parent div that contains all the blog posts */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* This class is applied to each individual blog post */
+.blog-post {
+    width: 600px;
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    /* Flexbox properties to align the content within the post */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Box shadow to give the post a 3D effect */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    /* Transition to animate the box shadow when the mouse hovers over the post */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Cursor to indicate that the post is clickable */
+    cursor: pointer;
+    /* Text decoration to remove the underline from the link */
+    text-decoration: none;
+}
+
+/* Hover effect for the blog post */
+.blog-post:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+    /* 3D animation to make the post appear to pop out of the page */
+    transform: translateZ(10px);
+}
+
+/* Classes for the title, date, and description of the post */
+.blog-post h3 {
+    font-size: 2em;
+    margin: 0;
+    color: #000;
+}
+
+.blog-post time {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Class for the tags of the post */
+.blog-post .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-post .tags span {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+}
