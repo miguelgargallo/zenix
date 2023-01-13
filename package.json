@@ -12,7 +12,7 @@
     "start-zenix": "astro dev",
     "build-zenix": "astro build",
     "preview-zenix": "astro preview",
-    "astro-zenix": "astro",
+    "rocket-zenix": "npm publish",
     "clean-zenix": "rm -r node_modules",
     "bye-zenix": "rm -r node_modules && npm i",
     "clean-dev-zenix": "rm -r node_modules && npm i && npm run zenix",
@@ -20,7 +20,8 @@
     "sudo-clean-zenix": "sudo rm -r node_modules",
     "sudo-bye-zenix": "sudo rm -r node_modules && npm i",
     "sudo-clean-dev-zenix": "sudo rm -r node_modules && npm i && npm run zenix",
-    "sudo-clean-build-zenix": "sudo rm -r node_modules && npm i && npm run build-zenix"
+    "sudo-clean-build-zenix": "sudo rm -r node_modules && npm i && npm run build-zenix",
+    "astro-zenix": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.14.0",

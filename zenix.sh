@@ -13,6 +13,8 @@ commands=( # Define commands in an array
     "sudo rm -r npm sudo-bye-zenix" #w Sudo Bye Zenix
     "sudo rm -r npm sudo-clean-dev-zenix" #e Sudo Clean Dev Zenix
     "sudo rm -r npm sudo-clean-build-zenix" #r Sudo Clean Build Zenix
+    "npm publish" #p Rocket Zenix
+    
 )
 clear # Clear the terminal
 echo "  "
@@ -38,7 +40,7 @@ echo "|___|___|___| Press any other key to quit:"
 echo "  "
 read -p " Select an option: " option # Read user input and store it in a variable
 clear # Clear the terminal
-if [[ ! $option =~ ^[0-9qwei]$ ]]; then # Validate user input
+if [[ ! $option =~ ^[0-9qewrp]$ ]]; then # Validate user input
     echo "Invalid option"
     exit 1
 fi
