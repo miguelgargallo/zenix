@@ -1,4 +1,5 @@
 # 🖋️ About Zenix framework
+
 - [🖋️ About Zenix framework](#️-about-zenix-framework)
   - [✨ What is coming next?](#-what-is-coming-next)
   - [🥰 Our Philosophy](#-our-philosophy)
