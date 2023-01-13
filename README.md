@@ -35,9 +35,10 @@ All commands are run from the root of the project, from a terminal:
 | :--------------------- | :----------------------------------------------- |
 | `npm i`                | Installs dependencies                            |
 | `npm zenix`            | Starts local dev server at `localhost:3000`      |
-| `./remote.sh` *1       | Open the remote and don't type commands anymore  |
+| `./zenix.sh` *1       | Open the remote and don't type commands anymore  |
 
-*1: first 'chmod +x ./remote.sh' then './remote.sh'.
+*1: first 'chmod +x ./zenix.sh' then './zenix.sh'.
+If you want a first run to try do: 'npm i && ./zenix.sh' and press 2 to start the dev instance at port 3000.
 
 ## 🚀 Project Structure
 
