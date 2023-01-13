@@ -10,13 +10,14 @@ This project is a framework based on a fork of astro-starter-kit, so this is a m
 
 ## -🚀 In this update
 
-Update | github 1.0.75 | npm 0.0.27 | Responsive | Remote | Pylar AI | Database | Github API | Vercel deployable | Astro components | CSS customization | Markdown & MDX support | SEO-friendly | Sitemap support | RSS Feed support | Lighthouse performance | 100/100
+Update | github 1.0.76 | npm 0.0.29 | Fix Menu | Responsive | Remote | Pylar AI | Database | Github API | Vercel deployable | Astro components | CSS customization | Markdown & MDX support | SEO-friendly | Sitemap support | RSS Feed support | Lighthouse performance | 100/100
 
 - ✅ Added a remote control to use, like tv!
 - ✅ Added a new layout for posts
 - ✅ Added a new css for mobile
 - ✅ Improved responsiveness
 - ✅ Fix Menu error when tapping on leaf
+- ✅ Fix Menu error when tapping on blog
 - ✅ Fix margins
 - ✅ Fix menu
 - ✨ Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
