@@ -29,7 +29,7 @@
 
 /* Hover effect for the blog post */
 .blog-post:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 0 #000000cc;
     /* 3D animation to make the post appear to pop out of the page */
     transform: translateZ(10px);
 }
@@ -59,9 +59,15 @@
 }
 
 .blog-post .tags span {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+    padding: 0.05em 0.25em 0.05em 0.25em;
+    margin: 0.5em;
+    border: 1px solid #000;
+}
+
+/* Class for hover effect on the tags */
+.blog-post .tags span:hover {
     background-color: #000;
     color: #fff;
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 10px;
 }

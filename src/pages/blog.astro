@@ -32,7 +32,6 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
             posts.map((post) => (
               <div class="blog-post">
                 <p class="tags">
-                  <strong>Tags: </strong>
                   {post.frontmatter.tags.map((tag) => (
                     <span>{tag}</span>
                   ))}
