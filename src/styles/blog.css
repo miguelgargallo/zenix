@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* Add transition for a smooth animation */
 }
 
 /* This class is applied to each individual blog post */
@@ -21,8 +22,8 @@
     border: 1px solid #000;
     /* Transition to animate the box shadow when the mouse hovers over the post */
     transition: box-shadow 0.3s ease-in-out;
-    /* Cursor to indicate that the post is clickable */
-    cursor: pointer;
+    /* Cursor by Default */
+    cursor: default;
     /* Text decoration to remove the underline from the link */
     text-decoration: none;
 }
@@ -70,4 +71,19 @@
 .blog-post .tags span:hover {
     background-color: #000;
     color: #fff;
+}
+
+/* Tags on hover slashes a color from one side to another */
+.blog-post .tags span:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff, transparent);
+    z-index: -1;
+    border-radius: 10px;
+    /* shadow 0 */
+
 }
