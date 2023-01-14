@@ -1,6 +1,6 @@
 ---
 layout: "../layouts/BlogPost.astro"
-title: "About MyBlog framework"
+title: "About Zenix framework"
 description: "About MyBlog framework | Miguel Gargallo"
 updatedDate: "August 10 2022"
 pubDate: "Jan 10 2023"
