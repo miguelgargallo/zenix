@@ -13,7 +13,7 @@ This project is a framework based on a fork of astro-starter-kit, so this is a m
 
 ## ✨ What is coming next?
 
-- ✨ Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
+Internally we are using the new version of Zenix with DATABASE and it connects successfully to the backend!
 
 Zenix 1.1.0 will continue with the same strict philosophy of the framework, but with the addition of a database, so you can create your own backend and connect it to the frontend, and you can also use the Github API to connect to the backend.
 
@@ -51,7 +51,7 @@ Update | github 1.0.76 | npm 0.0.29 | Fix Menu | Responsive | Remote | Pylar AI 
 
 ## 🎁 Features
 
-🎁 It contains the Zenix Remote (github version 1.0.68 and npm version 0.0.17 Zenix npmjs)
+It contains the Zenix Remote (github version 1.0.68 and npm version 0.0.17 Zenix npmjs)
 
 ![Zenix Remote](https://user-images.githubusercontent.com/5947268/212189978-7b24b4ad-bb43-4edf-b81b-f5df5a35783b.png)
 

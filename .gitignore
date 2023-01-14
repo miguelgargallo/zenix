@@ -20,6 +20,7 @@ pnpm-debug.log*
 # Zenix specific files
 .trash
 .tools
+.labs
 backend
 db
 src/pages/profile
@@ -38,4 +39,4 @@ src/pages/book.astro
 internal.UPDATES.md
 
 # Fonts
-src/fonts
+src/styles/fonts
