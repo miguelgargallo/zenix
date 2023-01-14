@@ -16,10 +16,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-src/components/db.js
-src/layouts/BookHead.astro
-src/layouts/BookPage.astro
-src/pages/book.astro
 
 # Zenix specific files
 .trash
@@ -28,3 +24,18 @@ backend
 db
 src/pages/profile
 .package.json
+
+# New features, next releases
+src/pages/events
+src/components/EventsBaseHead.astro
+src/layouts/EventsPost.astro
+src/styles/events.css
+src/pages/tlds.astro
+src/components/db.js
+src/layouts/BookHead.astro
+src/layouts/BookPage.astro
+src/pages/book.astro
+internal.UPDATES.md
+
+# Fonts
+src/fonts
