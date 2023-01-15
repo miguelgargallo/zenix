@@ -9,23 +9,27 @@
 /* This class is applied to each individual blog post */
 .blog-post {
     width: 600px;
-    background-color: #f7f7f7;
+    background: url("{{ heroImage }}") no-repeat center center;
+    background-size: cover;
     padding: 1em;
     margin: 1em;
     border-radius: 10px;
-    /* Flexbox properties to align the content within the post */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Box shadow to give the post a 3D effect */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #000;
-    /* Transition to animate the box shadow when the mouse hovers over the post */
     transition: box-shadow 0.3s ease-in-out;
-    /* Cursor by Default */
     cursor: default;
-    /* Text decoration to remove the underline from the link */
     text-decoration: none;
+}
+
+.blog-hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 
 /* Hover effect for the blog post */
