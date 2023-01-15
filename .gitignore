@@ -37,6 +37,6 @@ src/layouts/BookHead.astro
 src/layouts/BookPage.astro
 src/pages/book.astro
 internal.UPDATES.md
-
+src/pages/blog-es/no
 # Fonts
 src/styles/fonts
