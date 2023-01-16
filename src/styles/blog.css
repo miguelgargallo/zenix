@@ -6,6 +6,24 @@
     /* Add transition for a smooth animation */
 }
 
+.button {
+    background-color: #fff;
+    border: 0px transparent;
+    color: black;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: default;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
 /* This class is applied to each individual blog post */
 .blog-post {
     width: 600px;
