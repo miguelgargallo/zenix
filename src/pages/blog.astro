@@ -26,8 +26,8 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
     <Ga />
     <Header />
     <main>
-     <Language />
       <section>
+        <Language />
         <div class="blog-posts">
           {
             posts.map((post) => (
