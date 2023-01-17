@@ -48,3 +48,7 @@ src/pages/books.astro
 src/pages/books
 src/pages/domains.astro
 .sotano
+src/pages/domains/reserva.astro
+src/pages/domains/index.astro
+src/pages/domains/registry.astro
+src/styles/registry.css
