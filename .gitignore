@@ -40,3 +40,11 @@ internal.UPDATES.md
 src/pages/blog-es/no
 # Fonts
 src/styles/fonts
+
+# Support
+.suppport
+src/layouts/BookPost.astro
+src/pages/books.astro
+src/pages/books
+src/pages/domains.astro
+.sotano
