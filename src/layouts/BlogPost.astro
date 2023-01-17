@@ -13,11 +13,22 @@ export interface Props {
     updatedDate?: string;
     author?: string;
     heroImage?: string;
+    heroImageAlt?: string;
+    heroImageSource?: string;
   };
 }
 
 const {
-  content: { title, description, updatedDate, pubDate, author, heroImage },
+  content: {
+    title,
+    description,
+    updatedDate,
+    pubDate,
+    author,
+    heroImage,
+    heroImageAlt,
+    heroImageSource,
+  },
 } = Astro.props;
 ---
 
@@ -60,6 +71,7 @@ const {
           src={heroImage}
           alt={`${title} - ${description}`}
         />
+        {heroImageSource}
         <slot />
       </article>
     </main>
