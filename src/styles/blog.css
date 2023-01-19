@@ -6,6 +6,34 @@
     /* Add transition for a smooth animation */
 }
 
+pre a {
+    color: #000;
+    font-size: 20px;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* 810 to 620 pre disabled on mobile */
+
+@media (max-width: 810px) {
+    pre {
+        display: none;
+    }
+
+}
+
+/* pre disabled on mobile */
+
+@media (max-width: 600px) {
+    pre {
+        display: none;
+    }
+
+}
+
 .button {
     background-color: #fff;
     border: 0px transparent;
