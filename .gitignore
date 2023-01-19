@@ -25,6 +25,7 @@ backend
 db
 src/pages/profile
 .package.json
+Apps
 
 # New features, next releases
 src/pages/events
