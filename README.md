@@ -1,6 +1,7 @@
 # 🖋️ About Zenix framework
 
 - [🖋️ About Zenix framework](#️-about-zenix-framework)
+  - [🎉 The UPDATE 100!!!](#-the-update-100)
   - [✨ What is coming next?](#-what-is-coming-next)
   - [🥰 Our Philosophy](#-our-philosophy)
   - [🚀 In this update](#-in-this-update)
@@ -10,6 +11,12 @@
   - [📝 License](#-license)
 
 This project is a framework based on a fork of astro-starter-kit, so this is a modified version of the default template.
+
+## 🎉 The UPDATE 100!!!
+
+- ✅ We implemented code boxes, so you can add code to your posts, and it will be displayed as a code box, with a copy button, and a button to expand the code box.
+- ✅ We implemented with responsiveness, so you can see the code box in mobile, and it will be displayed as a code box, with a copy button, and a button to expand the code box.
+- ✅ We made a HARD RESET only on github, never on npm production repository.
 
 ## ✨ What is coming next?
 
