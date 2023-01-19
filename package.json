@@ -4,9 +4,9 @@
   "type": "module",
   "license": "Pylar AI creative ML license",
   "author": "Miguel Gargallo",
-  "version": "0.0.40",
-  "github version": "1.0.101",
-  "npm version": "0.0.40",
+  "version": "0.0.41",
+  "github version": "1.0.102",
+  "npm version": "0.0.41",
   "private": false,
   "scripts": {
     "db": "cd .. && cd backend && ./pocketbase serve",
