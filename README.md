@@ -9,6 +9,8 @@
   - [🧞 Commands](#-commands)
   - [🦄 Project Structure](#-project-structure)
   - [📝 License](#-license)
+  
+![ZENIX-FRAMEWORK-ASTRO](https://user-images.githubusercontent.com/5947268/213537146-53a81dca-c75a-4493-8123-3cf4098f3cb3.png)
 
 This project is a framework based on a fork of astro-starter-kit, so this is a modified version of the default template.
 
