@@ -1,0 +1,31 @@
+---
+function today() {
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  return `${month}/${day}`;
+}
+
+import "../styles/mobile.css";
+---
+
+<nav class="tab-menu">
+  <div class="menu-mobile">
+    <div class="menu-mobile-item">
+      <a href="/">
+        <i class="material-icons md-24">eco</i>
+      </a>
+    </div>
+    <div class="menu-mobile-item">
+      <a href="/blog">
+        <i class="material-icons md-24">newspaper</i>
+      </a>
+    </div>
+    <div class="menu-mobile-item">
+      <a href="https://ko-fi.com/miguelgargallo" target="_blank">
+        <i class="material-icons md-24">local_cafe</i>
+      </a>
+    </div>
+  </div>
+</nav>

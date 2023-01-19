@@ -1,0 +1,80 @@
+---
+import Tag from "../components/Tag.astro";
+import Ga from "../components/Ga.astro";
+import BlogBaseHead from "../components/BlogBaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    author?: string;
+    heroImage?: string;
+    heroImageAlt?: string;
+    heroImageSource?: string;
+  };
+}
+
+const {
+  content: {
+    title,
+    description,
+    updatedDate,
+    pubDate,
+    author,
+    heroImage,
+    heroImageAlt,
+    heroImageSource,
+  },
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <Tag />
+    <BlogBaseHead title={title} description={description} />
+    <meta name="keywords" content="blog, posts, articles" />
+    <meta name="robots" content="index, follow" />
+  </head>
+
+  <body>
+    <Ga />
+    <Header />
+    <main>
+      <article>
+        <header>
+          <h1 class="title">{title}</h1>
+          {
+            pubDate && (
+              <time>
+                <div>Published on {pubDate}</div>{" "}
+              </time>
+            )
+          }
+          {
+            updatedDate && (
+              <>
+                <div>
+                  Last updated on <time>{updatedDate}</time>
+                </div>
+                <p>Author: {author}</p>
+              </>
+            )
+          }
+        </header>
+        <hr />
+        <img
+          class="img-fluid"
+          src={heroImage}
+          alt={`${title} - ${description}`}
+        />
+        {heroImageSource}
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

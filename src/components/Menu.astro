@@ -1,0 +1,73 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+function today() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    return `${month}/${day}`;
+}
+---
+
+<div>
+    <nav>
+        <HeaderLink href="/">
+            <div>
+                <span class="material-icons md-36">&#xea35</span>
+                <item>Home</item>
+            </div>
+        </HeaderLink>
+        <HeaderLink href="/about">
+            <div>
+                <span class="material-icons md-36">&#xea3a</span>
+                <item>About</item>
+            </div>
+        </HeaderLink>
+        <HeaderLink href="/blog">
+            <div>
+                <span class="material-icons md-36">&#xeb81</span>
+                <item>Blog {today}</item>
+            </div>
+        </HeaderLink>
+        <HeaderLink
+            href="https://ko-fi.com/miguelgargallo"
+            target="_blank"
+            class="tab-menu-item"
+        >
+            <div>
+                <span class="material-icons md-36">&#xefef</span>
+                <item>Buy me a Coffe</item>
+            </div>
+        </HeaderLink>
+        <div>
+            <HeaderLink
+                href="https://twitter.com/miguelgargallo"
+                target="_blank"
+                rel="noopener"
+            >
+                Twitter
+            </HeaderLink>
+            <HeaderLink
+                href="https://www.youtube.com/@MiguelGargalloLlamas"
+                target="_blank"
+                rel="noopener"
+            >
+                YouTube
+            </HeaderLink>
+            <HeaderLink
+                href="https://github.com/miguelgargallo"
+                target="_blank"
+                rel="noopener"
+            >
+                GitHub
+            </HeaderLink>
+            <HeaderLink
+                href="https://twitchprimegratis.com"
+                target="_blank"
+                rel="noopener"
+            >
+                Twitch
+            </HeaderLink>
+        </div>
+    </nav>
+</div>

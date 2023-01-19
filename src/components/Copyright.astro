@@ -1,0 +1,11 @@
+---
+import { AUTHOR } from "../config";
+import Mobile from "./Mobile.astro";
+const today = new Date();
+---
+
+<div>
+  &copy; {today.getFullYear()}
+  {AUTHOR}. All rights reserved, Pylar AI Creative ML License.
+  <Mobile />
+</div>

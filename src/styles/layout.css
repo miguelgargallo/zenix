@@ -1,0 +1,136 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav div item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3273dc;
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+table {
+    width: 100%;
+    font-family: monospace;
+}
+
+.horizontal-scroll {
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: box;
+    width: 10%;
+}
+
+.horizontal-scroll nav {
+    display: flex;
+}
+
+.horizontal-scroll .day-square {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    width: 45px;
+    height: 45px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: regular;
+    font-family: monospace;
+    line-height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+}
+
+
+.profile {
+    border-radius: 50%;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.index-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+}

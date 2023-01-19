@@ -1,0 +1,120 @@
+---
+import Tag from "../components/Tag.astro";
+import Ga from "../components/Ga.astro";
+import BaseHead from "../components/BaseHead.astro";
+import ApiHeader from "../components/ApiHeader.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, AUTHOR } from "../config";
+---
+
+<html lang="en">
+  <head>
+    <Tag />
+  </head>
+  <!-- <div>
+    <ash>
+      <pill>
+        <a
+          href="https://pridefoundation.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          v3.0.1 API, we added a button, to generate another API!</a
+        >
+      </pill>
+    </ash>
+  </div>  -->
+  <body>
+    <Ga />
+    <div>
+      <ash>
+        <ApiHeader />
+      </ash>
+    </div>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      author={AUTHOR}
+    />
+    <div>
+      <h3>Welcome to the magic world of Handshake</h3>
+      <a>
+        Add this API to your tld as a txt record, and you will be able to
+        register domains on pencil.li soon 🚀🚀🚀
+      </a>
+      <p></p>
+    </div>
+    <div>
+      <form id="form" action="#" method="post">
+        <input type="hidden" name="title" value="New issue" />
+        <input type="text" name="wallet" placeholder="Your HNS Wallet" />
+        <input
+          type="text"
+          name="api"
+          placeholder="api"
+          value="cil"
+          disabled
+          hidden
+        />
+        <input type="text" name="domain" placeholder="Your TLD" />
+        <input type="submit" value="Submit" />
+      </form>
+      <script>
+        function updateApiField() {
+          const apiField = document.querySelector('input[name="api"]');
+          apiField.value =
+            "cil" +
+            Math.random().toString(36).substring(2, 15) +
+            Math.random().toString(36).substring(2, 15) +
+            Math.random().toString(36).substring(2, 16) +
+            Math.random().toString(36).substring(2, 12);
+        }
+        function getRandomTitle(domain) {
+          const titles = [
+            `[Domain] Add .${domain} to this f* awesome registry 🔥🔥🔥`,
+            `[Domain] Eth suc* 💧💧💧 add .${domain} to this amazing world of HNS`,
+            `[Domain] H A N D S H A K E and my tld .${domain} 🚀🚀🚀 rocks`,
+            `[Domain] HNS is the future, add .${domain} to this registry`,
+            `[Domain] WHY NOT .${domain} 🤷‍♂️🤷‍♂️🤷‍♂️ on Handshake registry`,
+            `[Domain] Add .${domain} to Handshake, ✨✨✨ it's awesome`,
+          ];
+          const index = Math.floor(Math.random() * titles.length);
+          return titles[index];
+        }
+        const form = document.querySelector("#form");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const wallet = document.querySelector('input[name="wallet"]').value;
+          const api = document.querySelector('input[name="api"]').value;
+          const domain = document.querySelector('input[name="domain"]').value;
+          const body = `Wallet: ${wallet}\nAPI: ${api}\nDomain: ${domain}`;
+          const title = getRandomTitle(domain);
+          const url = `https://github.com/Pencil-li/Domains/issues/new?title=${encodeURIComponent(
+            title
+          )}&body=${encodeURIComponent(body)}`;
+          window.open(url, "_blank");
+        });
+        updateApiField();
+      </script>
+      <div>
+        <ash>
+          <button onclick="window.location.reload();">
+            Generate a new API</button
+          >
+        </ash>
+      </div>
+      <p>
+        By submitting, you agree to the <a
+          href="https://www.pencil.li/support-tos"
+          target="_blank"
+          rel="noopener noreferrer">Terms of Service</a
+        > and <a
+          href="https://www.pencil.li/support-pp"
+          target="_blank"
+          rel="noopener noreferrer">Privacy Policy</a
+        >.
+      </p>
+    </div>
+    <Footer />
+  </body>
+</html>

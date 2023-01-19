@@ -1,0 +1,26 @@
+---
+const today = new Date();
+const getWeekday = (date: Date) =>
+  date.toLocaleDateString("en-us", { weekday: "short" });
+const subtractDays = (date: Date, days: number) => {
+  const copy = new Date(Number(date));
+  copy.setDate(date.getDate() - days);
+  return copy;
+};
+---
+
+<div class="horizontal-scroll">
+  <!-- Add day squares -->
+  {
+    [...Array(14).keys()].map((day) => (
+      <div class={`day-square ${day === 0 ? "active" : ""}`}>
+        <div>
+          {getWeekday(subtractDays(today, day))}
+          {subtractDays(today, day).toLocaleDateString("en-us", {
+            day: "numeric",
+          })}
+        </div>
+      </div>
+    ))
+  }
+</div>
