@@ -26,23 +26,6 @@ db
 src/pages/profile
 .package.json
 Apps
-
-# New features, next releases
-src/pages/events
-src/components/EventsBaseHead.astro
-src/layouts/EventsPost.astro
-src/styles/events.css
-src/pages/tlds.astro
-src/components/db.js
-src/layouts/BookHead.astro
-src/layouts/BookPage.astro
-src/pages/book.astro
-internal.UPDATES.md
-src/pages/blog-es/no
-# Fonts
-src/styles/fonts
-
-# Support
 .suppport
 src/layouts/BookPost.astro
 src/pages/books.astro
@@ -55,3 +38,14 @@ src/pages/domains/registry.astro
 src/styles/registry.css
 src/pages/blog-es/notes.md
 src/pages/blog/Template.mdx
+src/pages/events
+src/components/EventsBaseHead.astro
+src/layouts/EventsPost.astro
+src/styles/events.css
+src/pages/tlds.astro
+src/components/db.js
+src/layouts/BookHead.astro
+src/layouts/BookPage.astro
+src/pages/book.astro
+src/pages/blog-es/no
+src/styles/fonts
