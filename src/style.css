@@ -117,14 +117,23 @@ pre code {
 
 dialogue chatgpt,
 dialogue me,
-pre,
-warningresolution {
+pre {
     font-family: monospace;
     padding: 1em;
     border-radius: 10px;
     max-width: 600px;
     width: 100%
 }
+
+warningresolution {
+    font-family: monospace;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    max-width: 50%
+}
+
 
 dialogue chatgpt,
 dialogue me,
