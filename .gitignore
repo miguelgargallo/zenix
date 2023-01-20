@@ -49,3 +49,5 @@ src/layouts/BookPage.astro
 src/pages/book.astro
 src/pages/blog-es/no
 src/styles/fonts
+src/pages/notes.md
+package-pocketbase.json

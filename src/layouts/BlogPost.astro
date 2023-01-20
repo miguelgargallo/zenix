@@ -1,7 +1,7 @@
 ---
 import Tag from "../components/Tag.astro";
 import Ga from "../components/Ga.astro";
-import BlogBaseHead from "../components/BlogBaseHead.astro";
+import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -35,7 +35,7 @@ const {
 <html lang="en">
   <head>
     <Tag />
-    <BlogBaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} />
     <meta name="keywords" content="blog, posts, articles" />
     <meta name="robots" content="index, follow" />
   </head>

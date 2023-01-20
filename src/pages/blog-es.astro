@@ -1,9 +1,9 @@
 ---
 import Tag from "../components/Tag.astro";
 import Ga from "../components/Ga.astro";
-import BlogBaseHead from "../components/BlogBaseHead.astro";
-import Header from "../components/Header.astro";
+import BaseHead from "../components/BaseHead.astro";
 import Language from "../components/Language.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
@@ -18,7 +18,7 @@ const posts = (await Astro.glob("./blog-es/*.{md,mdx,pen}")).sort(
 <html lang="en">
   <head>
     <Tag />
-    <BlogBaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <meta name="keywords" content="blog, posts, articles" />
     <meta name="robots" content="index, follow" />
   </head>

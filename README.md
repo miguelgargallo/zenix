@@ -1,6 +1,7 @@
 # 🖋️ About Zenix framework
 
 - [🖋️ About Zenix framework](#️-about-zenix-framework)
+  - [About the UPDATE 104](#about-the-update-104)
   - [🎉 The UPDATE 100!!!](#-the-update-100)
   - [✨ What is coming next?](#-what-is-coming-next)
   - [🥰 Our Philosophy](#-our-philosophy)
@@ -13,6 +14,12 @@
 ![ZENIX-FRAMEWORK-ASTRO](https://user-images.githubusercontent.com/5947268/213537146-53a81dca-c75a-4493-8123-3cf4098f3cb3.png)
 
 This project is a framework based on a fork of astro-starter-kit, so this is a modified version of the default template.
+
+## About the UPDATE 104
+
+- ✅ All CSS code in one file, WE NEED IT cause it was so frustrating to get repetitive code in the CSS file.
+- ✅ We also used internally the css optimizer from Zenix labs, so we can optimize the CSS file, and it is now 8,5 kB, instead of 18,4 kB and more readable.
+- ✅ We removed the CSS folder, and we put all the CSS code in one file, so you can modify it easily.
 
 ## 🎉 The UPDATE 100!!!
 
