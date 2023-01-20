@@ -572,12 +572,3 @@ nav ul {
         width: 100%
     }
 }
-
-/* Hide nav and footer on mobile when is rotated horizontally */
-@media (max-width:600px) and (orientation:landscape) {
-
-    nav,
-    footer {
-        display: none
-    }
-}
