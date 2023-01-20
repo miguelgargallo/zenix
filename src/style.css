@@ -55,7 +55,7 @@ div ash {
     margin: 100px
 }
 
-blockquote,
+/* blockquote,
 pill {
     font-style: italic
 }
@@ -76,6 +76,7 @@ pill a {
     text-decoration: none
 }
 
+ */
 blockquote {
     border: 1px solid #999;
     color: #000;
