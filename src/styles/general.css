@@ -51,12 +51,6 @@ div ash {
 
 }
 
-code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-    font-family: monospace;
-}
-
 pill {
     border-radius: 25px;
     color: rgb(0, 0, 0);
@@ -70,16 +64,6 @@ pill {
 pill a {
     color: #000;
     text-decoration: none;
-}
-
-pre {
-    padding: 1rem;
-    font-family: monospace;
-}
-
-pre>code {
-    all: unset;
-    font-family: monospace;
 }
 
 blockquote {

@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/BlogPost.astro"
+layout: "../layouts/UpdatesLayout.astro"
 title: "About Zenix framework"
 description: "About MyBlog framework | Miguel Gargallo"
 updatedDate: "Jan 14 2023"
@@ -11,6 +11,7 @@ author: "Miguel Gargallo"
 
 - [🚀 Update log](#-update-log)
 - [✨ Public updates](#-public-updates)
+  - [github 1.0.103 | npm 0.0.42](#github-10103--npm-0042)
   - [github 1.0.101 | npm 0.0.40](#github-10101--npm-0040)
   - [🎉 The UPDATE 100!!!](#-the-update-100)
   - [github 1.0.77 | npm 0.0.30](#github-1077--npm-0030)
@@ -20,6 +21,17 @@ author: "Miguel Gargallo"
 - [📝 License](#-license)
 
 # ✨ Public updates
+
+## github 1.0.103 | npm 0.0.42
+
+- ✅ Dialogues arrives to the chat! We implemented a new whole way to indicate when you are talking to someone with message bubbles!
+- ✅ Blue and green dialogue bubbles are now available! By default responsive!
+- ✅ We added the layout for update page.
+- ✅ We added the css for update page.
+- ✅ We added the UpdateBaseHead component for update page.
+- ✅ We implemented a new functionality to the dialogue, the "warning resolution" messague, once the content is not responsive to the screen, you can simply add the tag:
+
+<warningresolution> For a better experience turn horizontally your device or change to another.</warningresolution>
 
 ## github 1.0.101 | npm 0.0.40
 

@@ -100,26 +100,16 @@ warningresolution {
     word-wrap: break-word;
     cursor: default;
     max-width: 600px;
-    width: 100%;
+    width: fit-content;
 }
 
-/* warning resolution shows when pre and dialog on mobile hides, horizontal */
-
-@media (max-width: 809px) {
+@media (min-width: 811px) {
     warningresolution {
-        display: block;
-    }
-
-}
-
-/* warning resolution hides when pre and dialog on mobile hides, horizontal */
-
-@media (min-width: 809px) {
-    warningresolution {
-        display: none;
+        max-width: fit-content;
     }
 }
 
+/* 810 to 620 pre disabled on mobile */
 
 @media (max-width: 810px) {
     pre {
@@ -129,7 +119,6 @@ warningresolution {
     dialogue {
         display: none;
     }
-
 }
 
 /* pre disabled on mobile */
