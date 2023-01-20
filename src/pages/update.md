@@ -11,6 +11,7 @@ author: "Miguel Gargallo"
 
 - [🚀 Update log](#-update-log)
 - [✨ Public updates](#-public-updates)
+  - [github 1.0.105 | npm 0.0.43](#github-10105--npm-0043)
   - [github 1.0.104 | npm 0.0.43](#github-10104--npm-0043)
   - [github 1.0.103 | npm 0.0.42](#github-10103--npm-0042)
   - [github 1.0.101 | npm 0.0.40](#github-10101--npm-0040)
@@ -22,6 +23,10 @@ author: "Miguel Gargallo"
 - [📝 License](#-license)
 
 # ✨ Public updates
+
+## github 1.0.105 | npm 0.0.43
+
+- ✅ We added a new section of featured posts, so you can add a post to the featured posts, and it will be displayed in the home page.
 
 ## github 1.0.104 | npm 0.0.43
 

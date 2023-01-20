@@ -11,43 +11,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # environment variables
-.env
-.env.production
+.trash
 
 # macOS-specific files
 .DS_Store
-
-# Zenix specific files
-.trash
-.tools
-.labs
-backend
-db
-src/pages/profile
-.package.json
-Apps
-.suppport
-src/layouts/BookPost.astro
-src/pages/books.astro
-src/pages/books
-src/pages/domains.astro
-.sotano
-src/pages/domains/reserva.astro
-src/pages/domains/index.astro
-src/pages/domains/registry.astro
-src/styles/registry.css
-src/pages/blog-es/notes.md
-src/pages/blog/Template.mdx
-src/pages/events
-src/components/EventsBaseHead.astro
-src/layouts/EventsPost.astro
-src/styles/events.css
-src/pages/tlds.astro
-src/components/db.js
-src/layouts/BookHead.astro
-src/layouts/BookPage.astro
-src/pages/book.astro
-src/pages/blog-es/no
-src/styles/fonts
-src/pages/notes.md
-package-pocketbase.json

@@ -310,17 +310,6 @@ pre a {
     margin: 50px 0
 }
 
-.index-image,
-c {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    object-position: center
-}
-
 .menu-mobile {
     display: flex;
     flex-wrap: wrap;
