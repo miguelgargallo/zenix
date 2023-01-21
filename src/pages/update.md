@@ -13,6 +13,7 @@ Here you can see the updates of the framework and website.
 
 - [🚀 Update log](#-update-log)
   - [✨ Updates](#-updates)
+    - [github 1.0.106 | npm 0.0.43](#github-10106--npm-0043)
     - [github 1.0.105 | npm 0.0.43](#github-10105--npm-0043)
     - [github 1.0.104 | npm 0.0.43](#github-10104--npm-0043)
     - [github 1.0.103 | npm 0.0.42](#github-10103--npm-0042)
@@ -23,6 +24,10 @@ Here you can see the updates of the framework and website.
   - [📝 License](#-license)
 
 ## ✨ Updates
+
+### github 1.0.106 | npm 0.0.43
+
+- ✅ We added a new "interview" mode with css and design into our Zenix article, so you can read dialogs of interviews with a new design.
 
 ### github 1.0.105 | npm 0.0.43
 
