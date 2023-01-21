@@ -116,6 +116,7 @@ pre code {
 }
 
 dialogue chatgpt,
+dialogue interview,
 dialogue me,
 pre {
     font-family: monospace;
@@ -136,6 +137,7 @@ warningresolution {
 
 
 dialogue chatgpt,
+dialogue interview,
 dialogue me,
 warningresolution {
     background-color: #e6f2ff;
@@ -154,6 +156,7 @@ warningresolution {
 }
 
 dialogue chatgpt,
+dialogue interview,
 warningresolution {
     background-color: #e6ffe6;
     font-size: 20px
@@ -171,6 +174,7 @@ warningresolution {
 
 .button,
 dialogue chatgpt,
+dialogue interview,
 dialogue me,
 warningresolution {
     color: #000;
