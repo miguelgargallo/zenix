@@ -4,7 +4,7 @@
   "type": "module",
   "license": "Pylar AI creative ML license",
   "author": "Miguel Gargallo",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "github version": "1.0.106",
   "npm version": "0.0.43",
   "private": false,
@@ -26,9 +26,9 @@
     "astro-zenix": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.14.0",
-    "@astrojs/rss": "^2.0.0",
+    "@astrojs/mdx": "^0.15.0",
+    "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.9.2"
+    "astro": "2.0.0"
   }
 }

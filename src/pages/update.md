@@ -13,6 +13,7 @@ Here you can see the updates of the framework and website.
 
 - [🚀 Update log](#-update-log)
   - [✨ Updates](#-updates)
+    - [github 1.0.107 | npm 0.0.44](#github-10107--npm-0044)
     - [github 1.0.106 | npm 0.0.43](#github-10106--npm-0043)
     - [github 1.0.105 | npm 0.0.43](#github-10105--npm-0043)
     - [github 1.0.104 | npm 0.0.43](#github-10104--npm-0043)
@@ -24,6 +25,10 @@ Here you can see the updates of the framework and website.
   - [📝 License](#-license)
 
 ## ✨ Updates
+
+### github 1.0.107 | npm 0.0.44
+
+- ✅ We updated to Astro 2.0
 
 ### github 1.0.106 | npm 0.0.43
 
