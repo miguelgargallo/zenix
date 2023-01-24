@@ -4,14 +4,11 @@
 
 At Zenix Framework we are committed to providing a secure framework for our users. We will do our best to keep our framework up to date with the latest security patches.
 
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.101  | :white_check_mark: |
-| 1.0.101  | :white_check_mark: |
-| 1.0.101  | :white_check_mark: |
-| 1.0.101  | :x:                |
-| < 1.0.99   | :x:                |
+| Version  | Supported          |
+| -------- | ------------------ |
+| 2.0.0    | :white_check_mark: |
+| 1.9.2    | :white_check_mark: |
+| < 1.0.92 | :x:                |
 
 ## Reporting a Vulnerability
 
