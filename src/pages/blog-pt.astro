@@ -24,41 +24,46 @@ const posts = (await Astro.glob("./blog-pt/*.{md,mdx,pen}")).sort(
   </head>
   <body>
     <Ga />
-    <Header />
-    <main>
-      <section>
-        <Language />
-        <div class="blog-posts">
-          {
-            posts.map((post) => (
-              // when click on blog-post go this post
-              <div class="blog-post">
-                <div class="tags">
-                  {post.frontmatter.tags.map((tag) => (
-                    <span>{tag}</span>
-                  ))}
-                </div>
-                <time datetime={post.frontmatter.pubDate}>
-                  {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                    "en-us",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
-                <a href={post.url}>
-                  <h3>{post.frontmatter.title}</h3>
-                </a>
-                <p>{post.frontmatter.description}</p>
+    <img
+      src="https://pbs.twimg.com/profile_images/1586447193900204035/fLZqjQLG_400x400.jpg"
+      alt="Miguel Gargallo"
+      class="profile-blog"
+    /></body
+  >
+  <Header />
+  <main>
+    <section>
+      <Language />
+      <div class="blog-posts">
+        {
+          posts.map((post) => (
+            // when click on blog-post go this post
+            <div class="blog-post">
+              <div class="tags">
+                {post.frontmatter.tags.map((tag) => (
+                  <span>{tag}</span>
+                ))}
               </div>
-            ))
-          }
-        </div>
-      </section>
-    </main>
-    <Footer />
-    );
-  </body>
+              <time datetime={post.frontmatter.pubDate}>
+                {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                  "en-us",
+                  {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  }
+                )}
+              </time>
+              <a href={post.url}>
+                <h3>{post.frontmatter.title}</h3>
+              </a>
+              <p>{post.frontmatter.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+  <Footer />
+  );
 </html>
