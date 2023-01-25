@@ -95,11 +95,11 @@ Features:
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm i`                | Installs dependencies                            |
-| `npm zenix`            | Starts local dev server at `localhost:3000`      |
-| `./zenix.sh` *1       | Open the remote and don't type commands anymore   |
+| Command         | Action                                          |
+| :-------------- | :---------------------------------------------- |
+| `npm i`         | Installs dependencies                           |
+| `npm zenix`     | Starts local dev server at `localhost:3000`     |
+| `./zenix.sh` *1 | Open the remote and don't type commands anymore |
 
 *1: first 'chmod +x ./zenix.sh' then './zenix.sh'.
 If you want a first run to try do: 'npm i && ./zenix.sh' and press 2 to start the dev instance at port 3000.
@@ -112,7 +112,7 @@ Based on the file structure you provided, it looks like your project is built us
 * ZENIX FRAMEWORK
 ├── License.md
 ├── README.md
-├── UPDATES.md
+├── SECURITY.md
 ├── astro.config.mjs
 ├── favicon.ico
 ├── package-lock.json
@@ -126,14 +126,15 @@ Based on the file structure you provided, it looks like your project is built us
 │   ├── icon.ico
 │   ├── info.json
 │   ├── input.png
+│   ├── koldo-koi-superliga.jpg
 │   ├── placeholder-about.jpg
 │   ├── placeholder-hero.jpg
-│   └── placeholder-social.jpeg
+│   ├── placeholder-social.jpeg
+│   └── prompt-chatgpt-results.png
 ├── src
 │   ├── components
 │   │   ├── ApiHeader.astro
 │   │   ├── BaseHead.astro
-│   │   ├── BlogBaseHead.astro
 │   │   ├── Calendar.astro
 │   │   ├── Copyright.astro
 │   │   ├── Footer.astro
@@ -145,11 +146,13 @@ Based on the file structure you provided, it looks like your project is built us
 │   │   ├── Mobile.astro
 │   │   ├── Shortcuts.astro
 │   │   ├── Tag.astro
+│   │   ├── UpdatesBaseHead.astro
 │   │   └── anim.astro
 │   ├── config.ts
 │   ├── env.d.ts
 │   ├── layouts
-│   │   └── BlogPost.astro
+│   │   ├── BlogPost.astro
+│   │   └── UpdatesLayout.astro
 │   ├── pages
 │   │   ├── License
 │   │   ├── about.md
@@ -158,8 +161,8 @@ Based on the file structure you provided, it looks like your project is built us
 │   │   │   ├── ai-advancement-science.mdx
 │   │   │   ├── ai-costs-savings.mdx
 │   │   │   ├── ai-discover-marine-species.mdx
+│   │   │   ├── astro-markdown-content.mdx
 │   │   │   ├── chatbot-tensorflow-libdevice.mdx
-│   │   │   ├── chatgpt-write-perfectly.mdx
 │   │   │   ├── deepmind-ai-algorithms.mdx
 │   │   │   ├── docker-containers-devops.mdx
 │   │   │   ├── domains-exetensions-handshake.mdx
@@ -167,27 +170,39 @@ Based on the file structure you provided, it looks like your project is built us
 │   │   │   ├── licenses-opensource-important.mdx
 │   │   │   ├── miencraft-gaming-society.mdx
 │   │   │   ├── plagiarism-software-academia.mdx
+│   │   │   ├── prompt-chatgpt-results.mdx
+│   │   │   ├── rust-interview-questions.mdx
 │   │   │   └── ultimate-seo-guide-nextjs.mdx
+│   │   ├── blog-cat
+│   │   │   └── carles-tamayo-premi-crypto.mdx
+│   │   ├── blog-cat.astro
+│   │   ├── blog-de
+│   │   │   └── astro-markdown-content.mdx
+│   │   ├── blog-de.astro
 │   │   ├── blog-es
 │   │   │   ├── DeepMind-AI-Algoritmos.mdx
 │   │   │   ├── ai-avance-ciencia.mdx
 │   │   │   ├── ai-costos-ahorros.mdx
 │   │   │   ├── ai-descubrimiento-especies copy.mdx
-│   │   │   └── analisis-koi-koldo.mdx
+│   │   │   ├── analisis-koi-koldo.mdx
+│   │   │   └── astro-markdown-contenido.mdx
 │   │   ├── blog-es.astro
+│   │   ├── blog-fr
+│   │   │   └── astro-markdown-contenu.mdx
+│   │   ├── blog-fr.astro
+│   │   ├── blog-ita
+│   │   │   └── astro-markdown-content.mdx
+│   │   ├── blog-ita.astro
+│   │   ├── blog-pt
+│   │   │   └── astro-markdown-content.mdx
+│   │   ├── blog-pt.astro
 │   │   ├── blog.astro
-│   │   ├── domains
 │   │   ├── index.astro
 │   │   ├── projects.md
-│   │   └── rss.xml.js
-│   └── styles
-│       ├── anim.css
-│       ├── blog.css
-│       ├── general.css
-│       ├── icons.css
-│       ├── layout.css
-│       ├── mobile.css
-│       └── typography.css
+│   │   ├── rss.xml.js
+│   │   ├── security.md
+│   │   └── update.md
+│   └── style.css
 ├── tsconfig.json
 ├── zenix.sh
 └── zenixServer.sh
