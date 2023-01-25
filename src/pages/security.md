@@ -1,14 +1,18 @@
+---
+layout: "../layouts/BlogPost.astro"
+---
+
 # Security Policy
 
 ## Supported Versions
 
 At Zenix Framework we are committed to providing a secure framework for our users. We will do our best to keep our framework up to date with the latest security patches.
 
-| Version  | Supported          |
-| -------- | ------------------ |
-| 2.0.0    | :white_check_mark: |
-| 1.9.2    | :white_check_mark: |
-| < 1.9.2  | :x:                |
+| Version | Supported          |
+| ------- | ------------------ |
+| 2.0.0   | :white_check_mark: |
+| 1.9.2   | :white_check_mark: |
+| < 1.9.2 | :x:                |
 
 ## Reporting a Vulnerability
 
