@@ -7,6 +7,7 @@
   - [🥰 Our Philosophy](#-our-philosophy)
   - [🚀 In this update](#-in-this-update)
   - [🎁 Features](#-features)
+    - [📦 Work in progress](#-work-in-progress)
   - [🧞 Commands](#-commands)
   - [🦄 Project Structure](#-project-structure)
   - [📝 License](#-license)
@@ -85,11 +86,13 @@ Features:
 - ✅ Database support
 - ✅ Github API support
 - ✅ Vercel deployable support
-- ❌ Pylar AI support (WORK IN PROGRESS)
 - ✅ Improved posts
 - ✅ Modified layouts
 - ✅ Config customization support
 
+### 📦 Work in progress
+
+- ❌ Pylar AI support (WORK IN PROGRESS)
 
 ## 🧞 Commands
 
