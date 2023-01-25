@@ -85,7 +85,7 @@ Features:
 - ✅ Database support
 - ✅ Github API support
 - ✅ Vercel deployable support
-- ✅ Pylar AI support
+- ❌ Pylar AI support (WORK IN PROGRESS)
 - ✅ Improved posts
 - ✅ Modified layouts
 - ✅ Config customization support
