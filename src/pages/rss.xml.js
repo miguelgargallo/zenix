@@ -13,5 +13,6 @@ export const get = () =>
 		items: import.meta.glob('./blog-fr/**/*.{md,mdx,pen}'),
 		items: import.meta.glob('./blog-pt/**/*.{md,mdx,pen}'),
 		items: import.meta.glob('./blog-de/**/*.{md,mdx,pen}'),
+		items: import.meta.glob('./blog-cat/**/*.{md,mdx,pen}'),
 		// items: import.meta.glob('./book/**/*.{md,mdx,pen}'),
 	});
