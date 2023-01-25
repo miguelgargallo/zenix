@@ -92,7 +92,8 @@ Features:
 
 ### 📦 Work in progress
 
-- ❌ Pylar AI support (WORK IN PROGRESS)
+- 📦 Pylar AI support
+- 📦 Full integration of Astro 2.0, at this moment is installed, and works like a charm, but we are working on the integration of the new features.
 
 ## 🧞 Commands
 
