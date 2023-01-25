@@ -7,7 +7,7 @@
   - [🥰 Our Philosophy](#-our-philosophy)
   - [🚀 In this update](#-in-this-update)
   - [🎁 Features](#-features)
-    - [📦 Work in progress](#-work-in-progress)
+  - [📦 Work in progress](#-work-in-progress)
   - [🧞 Commands](#-commands)
   - [🦄 Project Structure](#-project-structure)
   - [📝 License](#-license)
@@ -90,7 +90,7 @@ Features:
 - ✅ Modified layouts
 - ✅ Config customization support
 
-### 📦 Work in progress
+## 📦 Work in progress
 
 - 📦 Pylar AI support
 - 📦 Full integration of Astro 2.0, at this moment is installed, and works like a charm, but we are working on the integration of the new features.
