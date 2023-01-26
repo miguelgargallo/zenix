@@ -15,3 +15,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+src/layouts/BlogPost.astro
+src/pages/blog/chatgpt-prompt-engineer.mdx
