@@ -474,6 +474,10 @@ nav ul {
     display: flex
 }
 
+audio {
+    width: 100%
+}
+
 .horizontal-scroll .day-square {
     display: inline-block;
     background-color: #fff;
