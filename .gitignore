@@ -17,3 +17,6 @@ pnpm-debug.log*
 .DS_Store
 src/layouts/BlogPost.astro
 src/pages/blog/chatgpt-prompt-engineer.mdx
+
+# Internal SUPER COOL tools to help me build this site
+tools
