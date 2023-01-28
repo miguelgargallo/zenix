@@ -34,7 +34,7 @@ Here you can see the updates of the framework and website.
 
 - ✅ We introduce the css update
 
-It looks like your blog is currently built using the Astro framework and has a file structure that includes a mix of Markdown and MDX files for blog content, as well as Astro components and layouts. If you would like to redesign your blog, you will likely need to decide on a new framework or tool to build it with, and then re-create your content and components in that new framework. This process can be time-consuming, but it will give you more control over the design and functionality of your blog.
+It looks like the blog is currently built using the Astro framework and has a file structure that includes a mix of Markdown and MDX files for blog content, as well as Astro components and layouts. If we would like to redesign the blog, we will likely need to decide on a new framework or tool to build it with, and then re-create our content and components in that new framework. This process can be time-consuming, but it will give us more control over the design and functionality of our blog.
 
 ### gh 1.0.110 | npm 0.0.44
 
