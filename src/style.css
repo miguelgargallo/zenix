@@ -9,7 +9,17 @@ text {
     font-family: monospace;
     line-height: 1.5;
     color: #000;
-    background-color: #fff;
+    background-color: #fff
+}
+
+article,
+text {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: justify
+}
+
+html {
     margin: 80px auto
 }
 
@@ -20,14 +30,7 @@ nav ul {
 }
 
 p {
-    font-family: "monospace";
-}
-
-article,
-text {
-    margin: 40px auto;
-    max-width: 800px;
-    text-align: justify
+    font-family: "monospace"
 }
 
 text {
@@ -121,30 +124,35 @@ pre code {
 
 dialogue chatgpt,
 dialogue interview,
-dialogue me,
-pre {
-    font-family: monospace;
+dialogue me {
     padding: 1em;
     border-radius: 10px;
     max-width: 600px;
     width: 100%
 }
 
+pre,
 warningresolution {
-    font-family: monospace;
     padding: 1em;
     border-radius: 10px;
-    max-width: 600px;
-    width: 100%;
-    max-width: 50%
+    width: 100%
 }
 
+pre {
+    font-family: monospace;
+    max-width: 600px
+}
+
+warningresolution {
+    max-width: 50%;
+    font-size: 20px;
+    background-color: #fcc
+}
 
 dialogue chatgpt,
 dialogue interview,
 dialogue me,
 warningresolution {
-    background-color: #e6f2ff;
     margin: 1em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -160,14 +168,13 @@ warningresolution {
 }
 
 dialogue chatgpt,
-dialogue interview,
-warningresolution {
+dialogue interview {
     background-color: #e6ffe6;
     font-size: 20px
 }
 
-warningresolution {
-    background-color: #fcc
+dialogue me {
+    background-color: #e6f2ff
 }
 
 .blog-post,
@@ -204,9 +211,15 @@ pre a {
     color: #000
 }
 
+.menu-mobile-item a {
+    color: #f5f5f5;
+    font-size: 1em;
+    transition: all .2s ease-in-out
+}
+
 .blog-post {
     width: 600px;
-    background: url({{\ heroImage\ }})no-repeat center center;
+    background:url({{\ heroImage\ }})no-repeat center center;
     background-size: cover;
     padding: 1em;
     margin: 1em;
@@ -279,7 +292,8 @@ pre a {
     border-radius: 10px
 }
 
-.profile {
+.profile,
+.profile-blog {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -289,10 +303,7 @@ pre a {
 
 .profile-blog {
     width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block
+    height: 100px
 }
 
 .content {
@@ -331,12 +342,6 @@ pre a {
     text-align: center;
     padding: 1em;
     margin-top: -8px
-}
-
-.menu-mobile-item a {
-    color: #f5f5f5;
-    font-size: 1em;
-    transition: all .2s ease-in-out
 }
 
 .menu-mobile-item i {
@@ -411,11 +416,6 @@ nav {
     z-index: 999
 }
 
-nav div item,
-nav mobile {
-    display: flex
-}
-
 nav ul {
     list-style: none
 }
@@ -468,6 +468,8 @@ nav ul li a:hover::before {
 
 .horizontal-scroll nav,
 nav,
+nav div item,
+nav mobile,
 nav ul {
     display: flex
 }
