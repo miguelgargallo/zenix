@@ -13,6 +13,7 @@ Here you can see the updates of the framework and website.
 
 - [🚀 Update log](#-update-log)
   - [✨ Updates](#-updates)
+    - [gh 1.0.114 | npm 0.0.44](#gh-10114--npm-0044)
     - [gh 1.0.111 | npm 0.0.45](#gh-10111--npm-0045)
     - [gh 1.0.112 | npm 0.0.44 | Menu](#gh-10112--npm-0044--menu)
     - [gh 1.0.110 | npm 0.0.44](#gh-10110--npm-0044)
@@ -30,6 +31,10 @@ Here you can see the updates of the framework and website.
   - [📝 License](#-license)
 
 ## ✨ Updates
+
+### gh 1.0.114 | npm 0.0.44
+
+- ✅ We introduce the terminal update
 
 ### gh 1.0.111 | npm 0.0.45
 
