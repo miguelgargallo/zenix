@@ -11,30 +11,32 @@ function today() {
 
 <div>
     <nav>
-        <HeaderLink href="/">
-            <span class="material-icons md-14">&#xea35</span>
-            <item> Home</item>
-        </HeaderLink>
-        <HeaderLink
-            href="https://miguelgargallo.github.io/terminal-site"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="material-icons md-14">&#xe5e1</span>
-            <item> Terminal</item>
-        </HeaderLink>
-        <HeaderLink
-            href="https://www.superdata.dev"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="material-icons md-14">&#xe5e1</span>
-            <item> Terminal Pro</item>
-        </HeaderLink>
-        <HeaderLink href="/blog">
-            <span class="material-icons md-14">&#xeb81</span>
-            <item> Blog {today}</item>
-        </HeaderLink>
+        <div>
+            <HeaderLink href="/" target="_blank" rel="noopener">
+                Home
+            </HeaderLink>
+            <a>|</a>
+            <HeaderLink href="/blog" target="_blank" rel="noopener">
+                Blog {today}
+            </HeaderLink>
+        </div>
+        <div>
+            <HeaderLink
+                href="https://miguelgargallo.github.io/terminal-site"
+                target="_blank"
+                rel="noopener"
+            >
+                Terminal
+            </HeaderLink>
+            <a>|</a>
+            <HeaderLink
+                href="https://www.superdata.dev"
+                target="_blank"
+                rel="noopener"
+            >
+                Terminal Pro
+            </HeaderLink>
+        </div>
         <div>
             <HeaderLink
                 href="https://ko-fi.com/miguelgargallo"
