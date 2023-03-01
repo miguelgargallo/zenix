@@ -20,11 +20,11 @@ Durante el curso de nuestra investigación, hemos aprendido mucho más sobre lo 
 
 Esta actualización se estructura de la siguiente manera:
 
-¿Qué sucedió y qué acciones tomamos?
-¿Qué datos se accedieron?
-¿Qué acciones debe tomar para protegerse o proteger su negocio?
-¿Qué hemos hecho para asegurar LastPass?
-¿Qué puede esperar de nosotros?
+- ¿Qué sucedió y qué acciones tomamos?
+- ¿Qué datos se accedieron?
+- ¿Qué acciones debe tomar para protegerse o proteger su negocio?
+- ¿Qué hemos hecho para asegurar LastPass?
+- ¿Qué puede esperar de nosotros?
 
 Tenemos el privilegio de servir a millones de usuarios y más de 100,000 empresas, y queremos asegurarnos de que todos nuestros clientes tengan la información que necesitan para responder a sus preguntas. Dada la cantidad de información que estamos compartiendo hoy, hemos estructurado esta actualización con resúmenes que incluyen enlaces integrados para proporcionar información más detallada sobre cada tema.
 
@@ -54,13 +54,13 @@ En respuesta al segundo incidente, nuevamente movilizamos a nuestro equipo de re
 
 Como se detalla en los resúmenes de incidentes, el actor de amenazas robó tanto datos propietarios de LastPass como datos de clientes, incluidos los siguientes:
 
-Resumen de los datos accedidos en el Incidente 1:
+### Resumen de los datos accedidos en el Incidente 1:
 
 Repositorios de desarrollo y código fuente bajo demanda basados en la nube: esto incluyó 14 de 200 repositorios de software.
 Scripts internos de los repositorios: estos contenían secretos y certificados de LastPass.
 Documentación interna: información técnica que describía cómo funcionaba el entorno de desarrollo.
 
-Resumen de los datos accedidos en el Incidente 2:
+### Resumen de los datos accedidos en el Incidente 2:
 
 Secretos de DevOps: secretos restringidos que se utilizaron para acceder a nuestro almacenamiento de respaldo en la nube.
 Almacenamiento de respaldo en la nube: contenía datos de configuración del sistema, secretos de API, secretos de integración de terceros, metadatos de clientes de LastPass y copias de respaldo de todos los datos de la bóveda de los clientes de LastPass. Todos los datos de la bóveda sensibles de los clientes, excepto las URL, las rutas de archivo a los software de LastPass instalados en Windows o macOS y ciertos casos de uso que involucran direcciones de correo electrónico, estaban encriptados usando nuestro modelo de conocimiento cero y solo se pueden descifrar con una clave de cifrado única derivada de la contraseña maestra de cada usuario. Como recordatorio, las contraseñas maestras de los usuarios finales nunca son conocidas por LastPass y no se almacenan ni se mantienen por LastPass, por lo tanto, no se incluyeron en los datos exfiltrados.
