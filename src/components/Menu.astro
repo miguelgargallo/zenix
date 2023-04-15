@@ -2,79 +2,55 @@
 import HeaderLink from "./HeaderLink.astro";
 
 function today() {
-    const date = new Date();
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    return `${month}/${day}`;
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  return `${month}/${day}`;
 }
 ---
 
 <div>
-    <nav>
-        <div>
-            <HeaderLink href="/" target="_blank" rel="noopener">
-                Home
-            </HeaderLink>
-        </div>
-        <div>
-            <HeaderLink
-                href="https://miguelgargallo.github.io/terminal-site"
-                target="_blank"
-                rel="noopener"
-            >
-                Terminal
-            </HeaderLink>
-            <a>|</a>
-            <HeaderLink
-                href="https://www.superdata.dev"
-                target="_blank"
-                rel="noopener"
-            >
-                Terminal Pro
-            </HeaderLink>
-        </div>
-        <div>
-            <HeaderLink href="/blog" target="_blank" rel="noopener">
-                Blog {today}
-            </HeaderLink>
-        </div>
-        <div>
-            <HeaderLink
-                href="https://ko-fi.com/miguelgargallo"
-                target="_blank"
-                rel="noopener"
-            >
-                Buy me a Coffe
-            </HeaderLink>
-            <a>|</a>
-            <HeaderLink
-                href="https://twitter.com/miguelgargallo"
-                target="_blank"
-                rel="noopener"
-            >
-                Twitter
-            </HeaderLink>
-            <HeaderLink
-                href="https://www.youtube.com/@MiguelGargalloLlamas"
-                target="_blank"
-                rel="noopener"
-            >
-                YouTube
-            </HeaderLink>
-            <HeaderLink
-                href="https://github.com/miguelgargallo"
-                target="_blank"
-                rel="noopener"
-            >
-                GitHub
-            </HeaderLink>
-            <HeaderLink
-                href="https://twitchprimegratis.com"
-                target="_blank"
-                rel="noopener"
-            >
-                Twitch
-            </HeaderLink>
-        </div>
-    </nav>
+  <nav>
+    <div>
+      <HeaderLink href="/" target="_blank" rel="noopener">Home</HeaderLink>
+    </div>
+    <div>
+      <HeaderLink
+        href="https://cal.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        Hire me on Cal.Com
+      </HeaderLink>
+    </div>
+    <div>
+      <HeaderLink href="/blog" target="_blank" rel="noopener">
+        Blog {today}
+      </HeaderLink>
+    </div>
+    <div>
+      <HeaderLink
+        href="https://ko-fi.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        Buy me a Coffe
+      </HeaderLink>
+      <a>|</a>
+      <HeaderLink
+        href="https://twitter.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        Twitter
+      </HeaderLink>
+      <HeaderLink
+        href="https://github.com/miguelgargallo"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </HeaderLink>
+    </div>
+  </nav>
 </div>
