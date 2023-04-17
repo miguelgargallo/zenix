@@ -307,6 +307,26 @@ pre a {
     border-radius: 10px
 }
 
+.pm4 {
+    padding: 4px;
+    margin: 4px;
+}
+
+.pm8 {
+    padding: 8px;
+    margin: 8px;
+}
+
+.pm16 {
+    padding: 16px;
+    margin: 16px;
+}
+
+.pm32 {
+    padding: 32px;
+    margin: 32px;
+}
+
 .profile,
 .profile-blog {
     width: 200px;
