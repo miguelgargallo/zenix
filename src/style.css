@@ -307,6 +307,28 @@ pre a {
     border-radius: 10px
 }
 
+.descriptiontitle {
+    font-size: 2em;
+    margin: 0
+}
+
+.descriptiontext {
+    font-size: 1.5em;
+    margin: 0
+}
+
+.calcombutton {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 4px 2px;
+    padding: 4px 8px;
+    border: 0 transparent;
+    border-radius: 10px;
+}
+
+
+
 .pm4 {
     padding: 4px;
     margin: 4px;
