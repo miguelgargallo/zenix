@@ -12,7 +12,7 @@ function today() {
 <div>
   <nav>
     <div>
-      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/">Home | {today}</HeaderLink>
     </div>
     <div>
       <HeaderLink
@@ -24,29 +24,23 @@ function today() {
       </HeaderLink>
     </div>
     <div>
-      <HeaderLink href="/blog" target="_blank" rel="noopener">
-        Blog {today}
-      </HeaderLink>
+      <HeaderLink href="/blog">English</HeaderLink>
+      <a>|</a>
+      <HeaderLink href="/blog-es">Spanish</HeaderLink>
+      <!-- 
+      <a>|</a>
+      <HeaderLink href="/blog-de">German</HeaderLink>
+      <a>|</a>
+      <HeaderLink href="/blog-cat">Catalan</HeaderLink>
+      <a>|</a>
+      <HeaderLink href="/blog-fr">French</HeaderLink>
+      <a>|</a>
+      <HeaderLink href="/blog-ita">Italian</HeaderLink>
+      <a>|</a> 
+      <HeaderLink href="/blog-jp">Japanese</HeaderLink>
+      <a>|</a>
+      <HeaderLink href="/blog-pt">Portuguese</HeaderLink> -->
     </div>
-   <div>
-      <HeaderLink href="/blog-es">
-        Spanish
-      </HeaderLink>
-      <a>|</a>
-      <HeaderLink href="/blog">
-        English
-      </HeaderLink>
-    </div> 
-<!--     <div>
-      <HeaderLink href="https://pencil.li" target="_blank" rel="noopener">
-        Pencil
-      </HeaderLink>
-      <a>|</a>
-      <HeaderLink href="https://pylar.org" target="_blank" rel="noopener">
-        PylarAI
-      </HeaderLink>
-    </div> 
- -->
     <div>
       <HeaderLink
         href="https://ko-fi.com/miguelgargallo"
