@@ -10,11 +10,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 const posts = (await Astro.glob("./blog-fr/*.{md,mdx,pen}")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
+    new Date(a.frontmatter.pubDate).valueOf(),
 );
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <Tag />
@@ -34,6 +34,7 @@ const posts = (await Astro.glob("./blog-fr/*.{md,mdx,pen}")).sort(
   <main>
     <section>
       <Language />
+      <p class="intro">This content is translated by Fiver professionals.</p>
       <div class="blog-posts">
         {
           posts.map((post) => (
@@ -51,7 +52,7 @@ const posts = (await Astro.glob("./blog-fr/*.{md,mdx,pen}")).sort(
                     year: "numeric",
                     month: "short",
                     day: "numeric",
-                  }
+                  },
                 )}
               </time>
               <a href={post.url}>
@@ -65,5 +66,5 @@ const posts = (await Astro.glob("./blog-fr/*.{md,mdx,pen}")).sort(
     </section>
   </main>
   <Footer />
-  );
+   );
 </html>

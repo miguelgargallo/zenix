@@ -34,6 +34,7 @@ const posts = (await Astro.glob("./blog-jp/*.{md,mdx,pen}")).sort(
   <main>
     <section>
       <Language />
+      <p class="intro">This content is translated by Fiver professionals.</p>
       <div class="blog-posts">
         {
           posts.map((post) => (
