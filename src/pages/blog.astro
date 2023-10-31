@@ -39,6 +39,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           posts.map((post) => (
             // when click on blog-post go this post
             <div class="blog-post">
+          
               <div class="tags">
                 {post.frontmatter.tags.map((tag) => (
                   <span>{tag}</span>
@@ -54,6 +55,10 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
                   }
                 )}
               </time>
+              <img
+                src={post.frontmatter.heroImage}
+                alt={post.frontmatter.title}
+              />
               <a href={post.url}>
                 <h3>{post.frontmatter.title}</h3>
               </a>
