@@ -16,12 +16,20 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <Tag />
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <meta name="keywords" content="blog, posts, articles" />
-    <meta name="robots" content="index, follow" />
-  </head>
+  <style>
+    .heroroundedimage {
+      border-radius: 10%;
+      width: 1000px;
+      height: 250px;
+      object-fit: cover;
+      margin: 0 auto;        
+    }
+  </style>
+  <Tag />
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <meta name="keywords" content="blog, posts, articles" />
+  <meta name="robots" content="index, follow" />
+
   <body>
     <Ga />
     <img
@@ -39,7 +47,6 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           posts.map((post) => (
             // when click on blog-post go this post
             <div class="blog-post">
-          
               <div class="tags">
                 {post.frontmatter.tags.map((tag) => (
                   <span>{tag}</span>
@@ -56,6 +63,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
                 )}
               </time>
               <img
+                class="heroroundedimage"
                 src={post.frontmatter.heroImage}
                 alt={post.frontmatter.title}
               />
