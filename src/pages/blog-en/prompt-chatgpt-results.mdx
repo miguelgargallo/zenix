@@ -1,0 +1,508 @@
+---
+layout: "../../layouts/BlogPost.astro"
+title: "How to prompt chatgpt to get results"
+description: "How to prompt chatgpt to get results"
+updatedDate: "Jan 20 2023"
+pubDate: "Jan 20 2023"
+author: "Miguel Gargallo"
+tags: ["prompt", "chatgpt", "results"]
+heroImage: "https://github.com/miguelgargallo/Blog/blob/master/public/prompt-chatgpt-results.png?raw=true"
+language: "en"
+--- 
+
+How to prompt chatgpt to get results, to get the best results you need to prompt chatgpt with the right questions.
+
+In this example we are going to introduce to chatgpt a file, "content.json" with the purpose of getting a response from chatgpt.
+
+¿Is chatgpt going to be able to guess the content of the file?
+<warningresolution>Rotate or change device.</warningresolution>
+<dialogue>
+<me>Hello, I am Miguel Gargallo, and with blue bubbles I am going to tell you my inputs to chatgpt.</me>
+<chatgpt>Hello, I am Miguel Gargallo, and with green bubbles I am going to answer to you.</chatgpt>
+<me>This is content.json a file example, please describe what it is:</me>
+<pre>
+```
+{"intents":
+  [
+    {
+      "tag":"greeting",
+      "input":["hello","hi there","nice to meet you","hi, is this is the pirate's organization","any pirates here ?","hi","hey there","hey","hi there","hi, nice to meet you","hello there","anyone there ?","hello pirates","knock knock"],
+      "responses":[
+          "Hi. Welcome to the world's largest pirate organization - The Strawhats",
+          "Hey yo, do you need help ?",
+          "welcome aboard, how may I help you ?",
+          "ahoy!!",
+          "Hi random person, what do'ya want ?",
+          "Hello my friend, How can I help you ?",
+          "Ha , Glad you showed up. How are you ?"
+        ]
+    },
+    {
+      "tag":"goodbye",
+      "input":["Thank you","Thanks","Thanks for the info","bye","byr bro","adios","okay bye","goodbye","see you later","i will catch you later","i will catch up later","okay i will see you later","I will talk to you later","will text you later","bye bro, I'll talk to you later","Bye brother"],
+      "responses":[
+          "Okay, Bye",
+          "Have a nice day",
+          "Adios",
+          "Goodbye",
+          "see you later",
+          "nice conversation. bye",
+          "okay. Have a nice day",
+          "Take care",
+          "we'll meet soon",
+          "Yeah Sure, Will talk to you later",
+          "Okay , Take care"
+        ]
+    },
+    {
+      "tag":"howami",
+      "input":["how are you ?","I am fine , how are you ?","are you fine ?","how are things going on ?","everything going on okay ?","how's everything there ?","how's everything going on ?","is everything okay ?"],
+      "responses":[
+          "Yeah , am fine",
+          "Everything's going on well",
+          "Doing good.Thanks you are my best friend",
+          "Things are Great",
+          "Yeah Fine, nothing much going on in my life",
+          "I am Great , wanna join the pirate's organization ?",
+          "Everything's great.",
+          "I am doing good. Life is boring. need to go on an adventure"
+        ]
+    },
+    {
+      "tag":"whoareyou",
+    "input":["who are you ?","what are you ?","what is your name ?","are you a chatbot ?","what can I call you ?","your name ?","are you a bot ?","how do I address you ?","How do I call you"],
+      "responses":[
+          "I am a The Great Pirate Bot , you can call me Going Merry",
+          "I am Going Merry and you could ask me questions about our organization",
+          "Going Merry at your service",
+          "My name is Going Merry and yes, I am the G.O.A.T",
+          "You can call me TechBot and I am here to Help you",
+          "My name is Going Merry and I am here to answer your questions regarding our organization. go ahead and shoot"
+        ]
+    },
+    {
+      "tag":"whereareyou",
+    "input":["where are you from ?","which country are you from ?","where do you live ?","where are you ?","where do you live in ?","which place do you live in ?","where are you currently at","where do you live currently ?","you are from where","you are from ?"],
+      "responses":[
+          "I Live in the East Blue",
+          "I am setting sail to the grand line",
+          "I live in East Blue. Pretty sure you wouldn't have heard about that",
+          "East Blue. That's where I live"
+        ]
+    },
+    {
+      "tag":"join",
+      "input":["how to get recruited ?","how to join ?","how do i get recruited ?","How to join the strawhats ?","how do I join the straw hats ?","how to join the straw hat pirates ?","how to enroll","how to join the organization","steps to join the organization","steps to join the pirates"],
+      "responses":[
+
+        "you need to contact the nearest straw hats center once you have completed the pre-requisites",
+        "contact the closest straw hat center from your location",
+        "well. there are some pre-requisite and after you complete them, find the straw hat centers"
+
+      ]
+    },
+    {
+      "tag":"whereisthecenter",
+      "input":["where is the straw hat center located ?","location of the straw hat center ?","strawhat center's location ?","where can I find the strawhat center ?","where can I find the strawhat center ?"],
+      "responses":[
+
+        "That's up to you. use your skills",
+        "They are present all over the city you live in. Find them on your own. I can't give any more information",
+        "there are a lot of straw hat centers in the city you are in. find them."
+      ]
+    },
+    {
+      "tag":"prerequisites",
+      "input":["what are the job requirements ?","what are the pre requisites ?","what are the pre-requisites ?","tell me about the pre-requisites","tell me more about the pre requisites","give more details about the pre-requisites","What are the requirements"," what's the basic requirements","what are the basic skills to get recruited ?"],
+      "responses":[
+        "you gotta master the art of swordfight or master Cooking and become a furious cook or you have to be the best navigator in the entire world or you need to be as strong and intelligent as god usop",
+        "swordsman, a medical reindeer, taekwando Cook, master navigator, simple minded monkey, highly intelligent strategist, god usop. you gotta be one of these things to pass the requirement and join the pirates"
+      ]
+    }
+  ]
+}
+```
+</pre>
+<me>Hint: it goes with a tensorflow file</me>
+<chatgpt>This is a JSON file that contains information for an intent-based chatbot. The file contains several "intents", which are different categories of messages that the chatbot should be able to respond to. Each intent has a "tag" that describes the intent, a list of "input" phrases that the chatbot should recognize as belonging to that intent, and a list of "responses" that the chatbot should use when it receives a message that belongs to that intent. The file appears to be for a pirate-themed chatbot, with intents for greetings, goodbyes, and questions about the chatbot's identity and organization.</chatgpt>
+
+That is correct, the file contains information for an intent-based chatbot. To know more about this project go to this article previously published on this blog. [blog/chatbot-tensorflow-libdevice](/blog/chatbot-tensorflow-libdevice)
+
+Now that chatgpt knows what the file is, let's see if it can answer for a more general json file to modify the chatbot and get it to answer more questions.
+
+<me>How would be rewrite the json file for a more general purpose and show me how would be general.json strictly</me>
+<chatgpt>Here's an example of how the json file could be rewritten for a more general purpose:</chatgpt>
+
+<pre>
+
+```
+
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "input": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
+            "responses": [
+                "Hello! How can I help you today?",
+                "Hi there! What can I do for you?",
+                "Hey! How can I assist you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "input": ["bye", "goodbye", "see you later", "catch you later", "talk to you later"],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later! Take care.",
+                "Catch you later! Have a good one."
+            ]
+        },
+        {
+            "tag": "help",
+            "input": ["help", "assistance", "support", "need help", "can you help me"],
+            "responses": [
+                "Of course! How can I assist you?",
+                "Sure thing! What do you need help with?",
+                "Absolutely! What kind of support do you need?"
+            ]
+        },
+        {
+            "tag": "hours",
+            "input": ["what are your hours", "when are you open", "when are you closed"],
+            "responses": [
+                "We are open every day from 9am to 5pm",
+                "Our hours of operation are 9am to 5pm, 7 days a week",
+                "We are open from 9am to 5pm Monday through Friday, and closed on weekends."
+            ]
+        },
+        {
+            "tag": "location",
+            "input": ["where are you located", "what is your address", "can you tell me where you are"],
+            "responses": [
+                "We are located at 123 Main Street",
+                "Our address is 123 Main Street",
+                "We are at 123 Main Street, come and visit us!"
+            ]
+        }
+    ]
+}
+```
+</pre>
+<me>how would be show me Just for learning purposes, can you suggest me more questions on the json with answers and add them? focus on the personal aspects and how make someone feel better, just show me new tag, inputs and responses, do not rewrite the whole file, just new ones, how would be show me feelings.json strictly.</me>
+<chatgpt>Sure, here's an example of a new "feelings" intent that you could add to the JSON file:</chatgpt>
+<pre>
+```
+        {
+            "tag": "feelings",
+            "input": ["I am feeling down", "I am feeling sad", "I am feeling depressed","I am feeling anxious", "I am feeling stressed"],
+            "responses": [
+                "I am sorry to hear that. Is there anything I can do to help?",
+                "It's normal to feel that way sometimes. Can you tell me more about what's been going on?",
+                "It sounds like you're going through a tough time. Have you considered speaking with a therapist or counselor?",
+                "Stress and anxiety are very common feelings. Would you like some tips to manage them?",
+                "I can understand how you feel. There are many ways to cope with depression. Can I suggest some resources for you?"
+            ]
+        }
+```
+</pre>
+<chatgpt>
+In this case, the tag is "feelings", the input are different ways to express feeling down, sad, depressed, anxious and stressed, and the responses are empathetic and offer help or suggestions for coping with these feelings. It is important to mention that this is a simple example, and it's not an adequate substitute for professional help and support.
+
+If a person expresses feelings of self-harm or suicide, it is important to reach out to a professional or a support hotline immediately.
+</chatgpt>
+<me>List me kinds of feelings of a person in their daily life, list me 10.</me>
+<chatgpt>
+Here are ten common feelings that a person might experience in their daily life:
+
+1. Happiness
+2. Sadness
+3. Fear
+4. Anger
+5. Love
+6. Excitement
+7. Stress
+8. Relaxation
+9. Frustration
+10. Contentment
+
+It is important to note that people experience a wide range of feelings and emotions, and the specific feelings that a person experiences can vary depending on their individual experiences and circumstances. Additionally, some people may experience more intense or prolonged feelings, such as depression or anxiety, which can have a significant impact on their daily lives.
+</chatgpt>
+<me>how would be show me add the ten common feelings that a person might experience in their daily life  you listed me into the json with answers and add them? just show me new tags, inputs and responses, do not rewrite the whole file, just this ones, how would be show me common.json strictly.</me>
+<chatgpt>Sure, here's an example of how you could add the ten common feelings I listed into the JSON file:</chatgpt>
+<pre>
+```
+    {
+        "tag": "happiness",
+        "input": ["I am happy", "I am feeling happy", "I am so happy", "I am really happy"],
+        "responses": [
+            "That's great to hear! What's making you happy today?",
+            "I'm glad to hear that! Can you tell me more about what's bringing you joy?",
+            "Happiness is contagious! Can you share the reason for your happiness with me?"
+        ]
+    },
+    {
+        "tag": "sadness",
+        "input": ["I am sad", "I am feeling sad", "I am so sad", "I am really sad"],
+        "responses": [
+            "I'm sorry to hear that. Can you tell me more about what's been going on?",
+            "It's normal to feel sad sometimes. Is there something specific that's been bringing you down?",
+            "It sounds like you're having a tough day. Would you like to talk about it?"
+        ]
+    },
+    {
+        "tag": "fear",
+        "input": ["I am afraid", "I am feeling afraid", "I am so afraid", "I am really afraid"],
+        "responses": [
+            "What are you afraid of?",
+            "It's normal to feel fear in certain situations, can you tell me what is the situation that's making you feel afraid?",
+            "It's important to address and work through your fears. Would you like some tips on how to do that?"
+        ]
+    },
+    {
+        "tag": "anger",
+        "input": ["I am angry", "I am feeling angry", "I am so angry", "I am really angry"],
+        "responses": [
+            "Can you tell me what's been making you feel angry?",
+            "It's normal to feel anger, but it's important to find healthy ways to express it. Would you like some tips on how to do that?",
+            "Sometimes, anger can be a sign of deeper emotions. Can you tell me more about what's been going on?"
+        ]
+    },
+    {
+        "tag": "love",
+        "input": ["I am in love", "I am feeling in love", "I am so in love", "I am really in love"],
+        "responses": [
+            "That's wonderful! Who or what are you in love with?",
+            "Love is a powerful feeling. Can you tell me more about how you're feeling?",
+            "It's great to be in love. How can I help you with that feeling?"
+        ]
+    },
+    {
+        "tag": "excitement",
+        "input": ["I am excited", "I am feeling excited", "I am so excited", "I am really excited"],
+        "responses": [
+            "That's great to hear! What's got you excited?",
+            "Excitement is contagious! Can you tell me more about what's got you pumped?",
+            "I'm glad to hear you're excited! Can you share the reason for your excitement with me?"
+        ]
+    },
+    {
+        "tag": "stress",
+        "input": ["I am stressed", "I am feeling stressed", "I am so stressed", "I am really stressed"],
+        "responses": [
+            "
+```
+</pre>
+<me>how would be show me continue strictly from line:</me>
+<pre>
+```
+            "I'm glad to hear you're excited! Can you share the reason for your excitement with me?"
+        ]
+    },
+    {
+```
+</pre>
+<chatgpt>Sure, here's how you could continue adding the remaining feelings to the JSON file:</chatgpt>
+<pre>
+```
+        "tag": "stress",
+        "input": ["I am stressed", "I am feeling stressed", "I am so stressed", "I am really stressed"],
+        "responses": [
+            "Stress can be overwhelming. Can you tell me more about what's been causing your stress?",
+            "It's important to find ways to manage stress. Would you like some tips on how to do that?",
+            "Stress can come from many sources, can you tell me where is your stress coming from?"
+        ]
+    },
+    {
+        "tag": "relaxation",
+        "input": ["I am relaxed", "I am feeling relaxed", "I am so relaxed", "I am really relaxed"],
+        "responses": [
+            "That's great to hear! What have you been doing to relax?",
+            "Relaxation is important for our well-being. Can you share your secret to relaxation with me?",
+            "I'm glad you're feeling relaxed. Can you tell me more about how you're feeling?"
+        ]
+    },
+    {
+        "tag": "frustration",
+        "input": ["I am frustrated", "I am feeling frustrated", "I am so frustrated", "I am really frustrated"],
+        "responses": [
+            "Can you tell me more about what's been causing your frustration?",
+            "It's normal to feel frustrated at times, but it's important to find healthy ways to cope with it. Would you like some tips on how to do that?",
+            "Frustration can be a sign of unmet needs or goals. Can you tell me more about what's been going on?"
+        ]
+    },
+    {
+        "tag": "contentment",
+        "input": ["I am content", "I am feeling content", "I am so content", "I am really content"],
+        "responses": [
+            "That's great to hear! What's making you feel content?",
+            "Contentment is a peaceful feeling. Can you share more about what's making you feel that way?",
+            "I'm glad you're feeling content. Can you tell me more about how you're feeling?"
+        ]
+    }
+```
+</pre>
+<chatgpt>
+As you can see, each feeling has a tag, a list of input phrases that the chatbot should recognize as belonging to that feeling, and a list of responses that the chatbot should use when it receives a message that belongs to that feeling.
+
+Keep in mind that this is just an example and you could add or remove some feelings or inputs, also you could add responses for each input.
+</chatgpt>
+</dialogue>
+
+This is how our new JSON file looks like:
+
+<pre>
+```
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "input": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
+            "responses": [
+                "Hello! How can I help you today?",
+                "Hi there! What can I do for you?",
+                "Hey! How can I assist you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "input": ["bye", "goodbye", "see you later", "catch you later", "talk to you later"],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later! Take care.",
+                "Catch you later! Have a good one."
+            ]
+        },
+        {
+            "tag": "help",
+            "input": ["help", "assistance", "support", "need help", "can you help me"],
+            "responses": [
+                "Of course! How can I assist you?",
+                "Sure thing! What do you need help with?",
+                "Absolutely! What kind of support do you need?"
+            ]
+        },
+        {
+            "tag": "hours",
+            "input": ["what are your hours", "when are you open", "when are you closed"],
+            "responses": [
+                "We are open every day from 9am to 5pm",
+                "Our hours of operation are 9am to 5pm, 7 days a week",
+                "We are open from 9am to 5pm Monday through Friday, and closed on weekends."
+            ]
+        },
+        {
+            "tag": "location",
+            "input": ["where are you located", "what is your address", "can you tell me where you are"],
+            "responses": [
+                "We are located at 123 Main Street",
+                "Our address is 123 Main Street",
+                "We are at 123 Main Street, come and visit us!"
+            ]
+        },
+        {
+            "tag": "feelings",
+            "input": ["I am feeling down", "I am feeling sad", "I am feeling depressed","I am feeling anxious", "I am feeling stressed"],
+            "responses": [
+                "I am sorry to hear that. Is there anything I can do to help?",
+                "It's normal to feel that way sometimes. Can you tell me more about what's been going on?",
+                "It sounds like you're going through a tough time. Have you considered speaking with a therapist or counselor?",
+                "Stress and anxiety are very common feelings. Would you like some tips to manage them?",
+                "I can understand how you feel. There are many ways to cope with depression. Can I suggest some resources for you?"
+            ]
+        },
+        {
+        "tag": "happiness",
+        "input": ["I am happy", "I am feeling happy", "I am so happy", "I am really happy"],
+        "responses": [
+            "That's great to hear! What's making you happy today?",
+            "I'm glad to hear that! Can you tell me more about what's bringing you joy?",
+            "Happiness is contagious! Can you share the reason for your happiness with me?"
+            ]
+        },
+        {
+        "tag": "sadness",
+        "input": ["I am sad", "I am feeling sad", "I am so sad", "I am really sad"],
+        "responses": [
+            "I'm sorry to hear that. Can you tell me more about what's been going on?",
+            "It's normal to feel sad sometimes. Is there something specific that's been bringing you down?",
+            "It sounds like you're having a tough day. Would you like to talk about it?"
+            ]
+        },
+        {
+        "tag": "fear",
+        "input": ["I am afraid", "I am feeling afraid", "I am so afraid", "I am really afraid"],
+        "responses": [
+            "What are you afraid of?",
+            "It's normal to feel fear in certain situations, can you tell me what is the situation that's making you feel afraid?",
+            "It's important to address and work through your fears. Would you like some tips on how to do that?"
+            ]
+        },
+        {
+        "tag": "anger",
+        "input": ["I am angry", "I am feeling angry", "I am so angry", "I am really angry"],
+        "responses": [
+            "Can you tell me what's been making you feel angry?",
+            "It's normal to feel anger, but it's important to find healthy ways to express it. Would you like some tips on how to do that?",
+            "Sometimes, anger can be a sign of deeper emotions. Can you tell me more about what's been going on?"
+            ]
+        },
+        {
+        "tag": "love",
+        "input": ["I am in love", "I am feeling in love", "I am so in love", "I am really in love"],
+        "responses": [
+            "That's wonderful! Who or what are you in love with?",
+            "Love is a powerful feeling. Can you tell me more about how you're feeling?",
+            "It's great to be in love. How can I help you with that feeling?"
+            ]
+        },
+        {
+        "tag": "excitement",
+        "input": ["I am excited", "I am feeling excited", "I am so excited", "I am really excited"],
+        "responses": [
+            "That's great to hear! What's got you excited?",
+            "Excitement is contagious! Can you tell me more about what's got you pumped?",
+            "I'm glad to hear you're excited! Can you share the reason for your excitement with me?"
+            ]
+        },
+        {
+                "tag": "stress",
+        "input": ["I am stressed", "I am feeling stressed", "I am so stressed", "I am really stressed"],
+        "responses": [
+            "Stress can be overwhelming. Can you tell me more about what's been causing your stress?",
+            "It's important to find ways to manage stress. Would you like some tips on how to do that?",
+            "Stress can come from many sources, can you tell me where is your stress coming from?"
+            ]
+        },
+        {
+        "tag": "relaxation",
+        "input": ["I am relaxed", "I am feeling relaxed", "I am so relaxed", "I am really relaxed"],
+        "responses": [
+            "That's great to hear! What have you been doing to relax?",
+            "Relaxation is important for our well-being. Can you share your secret to relaxation with me?",
+            "I'm glad you're feeling relaxed. Can you tell me more about how you're feeling?"
+            ]
+        },
+        {
+        "tag": "frustration",
+        "input": ["I am frustrated", "I am feeling frustrated", "I am so frustrated", "I am really frustrated"],
+        "responses": [
+            "Can you tell me more about what's been causing your frustration?",
+            "It's normal to feel frustrated at times, but it's important to find healthy ways to cope with it. Would you like some tips on how to do that?",
+            "Frustration can be a sign of unmet needs or goals. Can you tell me more about what's been going on?"
+            ]
+        },
+        {
+        "tag": "contentment",
+        "input": ["I am content", "I am feeling content", "I am so content", "I am really content"],
+        "responses": [
+            "That's great to hear! What's making you feel content?",
+            "Contentment is a peaceful feeling. Can you share more about what's making you feel that way?",
+            "I'm glad you're feeling content. Can you tell me more about how you're feeling?"
+            ]
+        }
+    ]
+}
+```
+</pre>
+
+With that being said, I hope you enjoyed this guide on how to prompt chatgpt to get results and learned something new. If you have any questions, feel free to ask me on twitter. If you have any suggestions for future tutorials, let me know as well. I'm always looking for new ideas to write about. Thanks for reading and happy coding!

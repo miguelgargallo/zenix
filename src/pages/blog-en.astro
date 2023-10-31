@@ -7,7 +7,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
-const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
+const posts = (await Astro.glob("./blog-en/*.{md,mdx,pen}")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
@@ -40,6 +40,11 @@ const posts = (await Astro.glob("./blog/*.{md,mdx,pen}")).sort(
           posts.map((post) => (
             // when click on blog-post go this post
             <div class="blog-post">
+              <div class="tags">
+                {post.frontmatter.tags.map((tag) => (
+                  <span>{tag}</span>
+                ))}
+              </div>
               <time datetime={post.frontmatter.pubDate}>
                 {new Date(post.frontmatter.pubDate).toLocaleDateString(
                   "en-US",
